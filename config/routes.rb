@@ -1,9 +1,19 @@
 CoultonbunneyCom::Application.routes.draw do
+  # get "main/portfolio"
+
+  # get "main/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+    root :to => 'main#portfolio'
+
+    match '/portfolio' => 'main#portfolio'
+    match '/about' => 'main#about'
+    match '/', to: 'main#portfolio'
+
+
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -48,7 +58,7 @@ CoultonbunneyCom::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  # root :to => 'main#portfolio'
 
   # See how all your routes lay out with "rake routes"
 

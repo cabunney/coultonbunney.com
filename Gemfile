@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -23,7 +24,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'bootstrap-sass', '~> 2.2.1.1'
+gem 'font-awesome-rails'
 group :production do
   gem 'pg', '0.12.2'
 end
