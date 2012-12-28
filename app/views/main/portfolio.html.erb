@@ -1,17 +1,27 @@
-<% provide(:title, 'Portfolio') %>
-<div class = "work-grid">
+<% 
+	provide(:title, 'Portfolio') 
+	@work_link = "pressed"
+	@about_link = ""
+
+%>
+
+
+<div class = "work-grid" style = "display:none;">
 <div class="row-fluid">
 	<div class = "span6 grid grid-top grid-l">
 		<a href="#" class = "grid-icon">
- 			<%=image_tag("lumo_pic.png")%>
+ 			<%=image_tag("lumo_pic.png", :class=>'color')%>
+
  			<div class = "center">LUMOback</div>
 
 		</a>
 	</div>
 	<div class = "span6 grid grid-top grid-r">
 		<a href="#" class = "grid-icon">			
- 			<i class="icon-globe "></i>
- 			<div class = "center">Disgo</div>
+ 			<!-- <i class="icon-globe "></i> -->
+ 			<i class="icon-globe color-globe"></i>
+
+ 			<div class = "center mid-center">Disgo</div>
 
 		</a>
 	</div>
@@ -28,8 +38,8 @@
 	<div class = "span6 grid grid-bottom grid-r">
 		
 			<a href="#" class = "grid-icon">
- 				<i class="icon-heart "></i>
- 				<div class = "center">Project Compassion</div>
+ 				<i class="icon-heart color-heart"></i>
+ 				<div class = "center mid-center">Project Compassion</div>
 
 			</a>
 	
