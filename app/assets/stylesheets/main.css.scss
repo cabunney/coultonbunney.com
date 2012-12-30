@@ -46,9 +46,16 @@ body {
 		text-align:center !important;
 	}
 	.work {
+		padding-left:15px !important;
+		padding-right:15px !important;
 		.well {
-			width:90% !important;
+			// width:90% !important;
 			margin-bottom:8px !important;
+		}
+		.btn {
+			margin-bottom:8px !important;
+			// max-width:100%;
+
 		}
 	}
 	.img-span {
@@ -107,6 +114,14 @@ body {
 
 }
 
+@media (min-width: 1150px){
+	.work {
+
+
+
+	}
+}
+
 
 ul.inline  {
 	margin-left: 0;
@@ -122,6 +137,14 @@ ul.inline  {
 	margin-top:20px;
 	padding:0px 10px 10px 0px;
 	border-bottom:1px solid #ddd ;
+}
+
+#header {
+	max-width:1150px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:10px;
+	padding-left:10px;
 }
 
 #logo {
@@ -140,7 +163,6 @@ ul.inline  {
 #nav-links {
 	text-align:center;
 	float:right;
-	padding:10px;
 	line-height:50px;
 }
 
@@ -155,6 +177,13 @@ ul.inline  {
 
 }
 
+#work-container {
+	max-width:1150px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:10px;
+	padding-left:10px;
+}
 
 .row-fluid {
 	width:100%;
@@ -225,21 +254,15 @@ ul.inline  {
 
 .work {
 	margin-top:20px;
-	// min-height:10em;
-	max-width:1150px;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-
-	position:relative;
+	width:100%;
 	background:white;
-	// height:20em;
 	border:1px solid #ddd;
 	padding:25px 25px 25px 25px;
 	color:$link-color;
-	display:inline-block;
-	overflow:auto;
-	.span6{
+	.icon-tag {
+		height:24px;
+	}
+	.span6 {
 		float:left;
 	}
 	.description {
@@ -259,13 +282,47 @@ ul.inline  {
 		height:40px;
 		line-height:40px;
 		width:127px;
-		margin-right:2%;
+
 		float:left;
 		font-size:16px;
 		color:#bbb;
 		i {
 			font-size:100%;
 			padding-top:3px;
+		}
+		&:hover {
+			// color:#333;
+			// background:#ddd;
+		}
+
+		// width:90%;
+	}
+
+	a {
+		float:left;
+	}
+
+	.learn-more {
+			margin-right:7px;
+	}
+
+	.btn {
+		// height:40px;
+		// line-height:40px;
+		// width:127px;
+		// margin-right:2%;
+		float:left;
+		font-size:14px;
+		color:#bbb;
+
+		
+		i {
+			font-size:100%;
+			padding-top:1px;
+			color:black;
+			width:10px;
+			
+			
 		}
 		&:hover {
 			// color:#333;

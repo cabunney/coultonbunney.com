@@ -6,11 +6,11 @@
 %>
 
 
-<div class = "work-grid">
+<div id = 'work-container' class = "work-grid ">
 	<div class="row-fluid">
-		<div id = "disgo_div" class = "span12 work">
-			<div class = "span6">
-				<h1>Disgo </h1>
+		<div id = "disgo_div" class = "span12 work clearfix">
+			<div class = "span6 clearfix">
+				<h1>Disgo <small><%=image_tag('iphone_icon_g.png',:class=>'visible-phone icon-tag')%></small></h1>
 				<div class = "description">Disgo is a mobile web application that makes your location a learning experience.
 				</div>
 				<div class = "built "><strong>Built using</strong></div>
@@ -19,13 +19,13 @@
 					<div class = "span12">
 
 						<%= link_to('') do %>
-			  				<div class = "well well-small learn-more">Learn more <i class="icon-plus-sign"></i>
+			  				<div class = "btn learn-more">Learn more <i class="icon-plus-sign"></i>
 							</div>
 						<% end %>
 					
 					
 						<%= link_to('http://bit.ly/godisgo') do %>
-			  				<div class = "well well-small link-to">bit.ly/godisgo <i class="icon-link"></i>
+			  				<div class = "btn link-to">bit.ly/godisgo <i class="icon-link"></i>
 							</div>
 						<% end %>
 					</div>
@@ -48,16 +48,3 @@
 	</div>
 </div>
 
-<script>
-$('.work .well').hover(function() {
-    $(this).stop().animate({
-        "backgroundColor": '#ddd',
-        "color": '#333'
-    }, 'fast')
-}, function() {
-    $(this).stop().animate({
-        "backgroundColor": '#F5F5F5',
-        "color": '#bbb'
-    }, 'fast')
-});
-</script>
