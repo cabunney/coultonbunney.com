@@ -7,14 +7,12 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body id = "full_background">
-	<!-- <div class="container">  -->
+<body>
 		<header class = "cont-nav">
 			<div class="row-fluid ">	
 	  			<div id = "nav-l" class = "span6 ">
 	  				<a id = "logo" href="#" class = "r-nav">
 	  					Coulton Bunney
-
 	  				</a>
 	  			</div>
 	  			<div id = "nav-r" class = "span6 ">
@@ -29,29 +27,15 @@
 	  						<a href="/about" class = "<%=@about_link%> nav-link">
 	  						  <i class="icon-book nav-icon"></i>
 	  						  <div class = "hidden-desktop center nav-div">About</div>
-
 	  						</a>
 	  					</li>
 	  				</ul>
-
 	  				</a>
 	  			</div>
 			</div>
-
-			
-	  		
-			
-		
-			<script>
-				// $("#logo").fitText(1.0, { minFontSize: '30px', maxFontSize: '40px' });
-				// $("#nav-links").fitText(1.0, { minFontSize: '16px', maxFontSize: '20px' });
-				
-
-			</script>
 		</header>
 
 	<%= yield %>
 
-	<!-- </div> -->
 </body>
 </html>

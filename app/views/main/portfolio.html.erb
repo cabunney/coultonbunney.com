@@ -6,43 +6,57 @@
 %>
 
 
-<div class = "work-grid" style = "display:none;">
-<div class="row-fluid">
-	<div class = "span6 grid grid-top grid-l">
-		<a href="#" class = "grid-icon">
- 			<%=image_tag("lumo_pic.png", :class=>'color')%>
+<div class = "work-grid">
+	<div class="row-fluid">
+		<div id = "disgo_div" class = "span12 work">
+			<div class = "span6">
+				<h1>Disgo </h1>
+				<div class = "description">Disgo is a mobile web application that makes your location a learning experience.
+				</div>
+				<div class = "built "><strong>Built using</strong></div>
+				<div class = "built built_description">HTML5, CSS3, PHP, JQuery Mobile, Bootstrap</div>
+				<div class = "row-fluid">
+					<div class = "span12">
 
- 			<div class = "center">LUMOback</div>
+						<%= link_to('') do %>
+			  				<div class = "well well-small learn-more">Learn more <i class="icon-plus-sign"></i>
+							</div>
+						<% end %>
+					
+					
+						<%= link_to('http://bit.ly/godisgo') do %>
+			  				<div class = "well well-small link-to">bit.ly/godisgo <i class="icon-link"></i>
+							</div>
+						<% end %>
+					</div>
+				</div>
+				
+				
 
-		</a>
+			</div>
+			<div class = "span6">
+				<%=image_tag('disgo_share_large.png', :class =>'hidden-phone')%>
+			</div>
+		</div>
 	</div>
-	<div class = "span6 grid grid-top grid-r">
-		<a href="#" class = "grid-icon">			
- 			<!-- <i class="icon-globe "></i> -->
- 			<i class="icon-globe color-globe"></i>
 
- 			<div class = "center mid-center">Disgo</div>
+	<div class="row-fluid">
+		<div class = "span12 work">
 
-		</a>
+		</div>
 	</div>
 </div>
 
-<div class="row-fluid">
-
-	<div class = "span6 grid grid-bottom grid-l">
-		<a href="#" class = "grid-icon">			
-			<%=image_tag("chalk_pic.png")%>
-			<div class = "center">Chalk Schools</div>
-		</a>
-	</div>
-	<div class = "span6 grid grid-bottom grid-r">
-		
-			<a href="#" class = "grid-icon">
- 				<i class="icon-heart color-heart"></i>
- 				<div class = "center mid-center">Project Compassion</div>
-
-			</a>
-	
-	</div>
-</div>
-</div>
+<script>
+$('.work .well').hover(function() {
+    $(this).stop().animate({
+        "backgroundColor": '#ddd',
+        "color": '#333'
+    }, 'fast')
+}, function() {
+    $(this).stop().animate({
+        "backgroundColor": '#F5F5F5',
+        "color": '#bbb'
+    }, 'fast')
+});
+</script>
