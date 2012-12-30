@@ -46,20 +46,26 @@ body {
 		text-align:center !important;
 	}
 	.work {
-		padding-left:15px !important;
-		padding-right:15px !important;
+		padding:15px !important;
 		.well {
 			// width:90% !important;
 			margin-bottom:8px !important;
 		}
 		.btn {
 			margin-bottom:8px !important;
+			padding-left:5px;
+			padding-right:5px;
 			// max-width:100%;
 
 		}
 	}
 	.img-span {
 		display:none !important;
+	}
+
+	#work-container {
+		padding-left:0px !important;
+		padding-right:0px !important;
 	}
 }
 
