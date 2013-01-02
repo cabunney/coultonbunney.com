@@ -11,8 +11,8 @@
 		<div id = "disgo_div" class = "span12 work clearfix">
 			<div class = "span6 clearfix">
 				<h1>Disgo <small><%=image_tag('iphone_icon_g.png',:class=>'icon-tag')%></small></h1>
-				<div class = "description"><!-- A mobile web application that makes your location a learning experience. -->
-				</div>
+				<!-- <div class = "description">A mobile web application that makes your location a learning experience.
+				</div> -->
 				<div class = "description"><span class = 'emphasis d1'>Locate and Learn:</span> Easily find interesting spots near you, and learn quick, crowdsourced facts about them instataneously.</div>
 		
 
@@ -23,7 +23,7 @@
 				
 				<!-- <div class = "well well-small"> -->
 				<!-- <div class = "built "><strong>Built using</strong></div> -->
-				<div class = "built_description"><span class = "tag">HTML5</span><span class = "tag">CSS3 </span><span class = "tag">PHP</span> <span class = "tag">JQuery Mobile </span><span class = "tag">Bootstrap</span></div>
+				<div class = "built_description hidden-phone"><span class = "tag">HTML5</span><span class = "tag">CSS3 </span><span class = "tag">PHP</span> <span class = "tag">JQuery Mobile </span><span class = "tag">Bootstrap</span></div>
 				<!-- </div> -->
 
 				<div class = "row-fluid">
@@ -94,6 +94,10 @@
 
 		}
 	})
+
+	// $('.description').fitText(3, { minFontSize: '14px', maxFontSize: '14px' });
+	// $('.emphasis').fitText(2, { minFontSize: '14px', maxFontSize: '18px' });
+	// jQuery("#responsive_headline").fitText(1.2);
 	
 	
 </script>
