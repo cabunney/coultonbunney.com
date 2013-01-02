@@ -22,7 +22,7 @@ body {
 
 }
 
-@media (max-width: 600px) { 
+@media (max-width:600px) { 
 	#nav-links {
 		width:100% !important;
 		text-align:center;
@@ -59,13 +59,20 @@ body {
 
 		}
 	}
-	.img-span {
-		display:none !important;
-	}
+	
 
 	#work-container {
 		padding-left:0px !important;
 		padding-right:0px !important;
+	}
+}
+
+@media (max-width:767px) { 
+	.carousel {
+		display:none !important;
+	}
+	.emphasis {
+		text-decoration: none;
 	}
 }
 
@@ -99,7 +106,7 @@ body {
 		margin-left:20px;
 		text-align:left !important;
 	}
-	.work {height:20em;}
+	// .work {height:25em;}
 }
 
 @media (min-width: 768px) {
@@ -107,7 +114,7 @@ body {
 		margin-left:10px;
 		margin-right:10px;
 	}
-	.work {height:20em;}
+	// .work {height:25em;}
 }
 
 @media (min-width: 980px) { 
@@ -116,7 +123,7 @@ body {
 		margin-left:20px;
 		text-align:left !important;
 	}
-	.work {height:20em;}
+	// .work {height:25em;}
 
 }
 
@@ -149,8 +156,8 @@ ul.inline  {
 	max-width:1150px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-right:10px;
-	padding-left:10px;
+	// padding-right:10px;
+	// padding-left:10px;
 }
 
 #logo {
@@ -170,6 +177,9 @@ ul.inline  {
 	text-align:center;
 	float:right;
 	line-height:50px;
+	i {
+		font-size:2.0em;
+	}
 }
 
 
@@ -180,6 +190,7 @@ ul.inline  {
 	&:hover{
 		color:$link-color;
 	}
+
 
 }
 
@@ -193,69 +204,6 @@ ul.inline  {
 
 .row-fluid {
 	width:100%;
-	.grid {
-		height:10em;
-		font-size:20px;
-		display:block;
-		margin-bottom:2%;
-	}
-	.grid-icon {
-		display:block;
-		width:100%;
-		background-color:transparent;
-		position:relative;
-		margin-left:auto;
-		margin-right:auto;
-		height:100%;
-		text-align:center;
-		img {
-			width:auto;
-			height:auto;
-			max-width:90%;
-			max-height:50%;
-			margin-top:35px;
-			margin-left:auto;
-			margin-right:auto;
-			margin-bottom:15px;
-			line-height:100%;			
-		}
-
-		i {
-			width:50%;
-			height:50%;
-			font-size:10em;
-			line-height:100%;
-			margin-bottom:15px;
-			margin-top:35px;
-		}
-
-		.icon-heart {
-			color:$link-color;
-		}
-
-		.icon-globe {
-			color:#08C;
-		}
-
-		.mid-center {
-			position:relative;
-			top:-50px;
-			width:70%;
-			display:block;
-			margin-left:auto;
-			margin-right:auto;
-			font-size:1.2em;
-			padding:10px;
-			font-family:'RobotoRegular';
-		}
-
-		&:hover {
-			color:black;
-		}
-	}
-	i {
-		font-size:2.0em;
-	}
 }
 
 .work {
@@ -263,8 +211,12 @@ ul.inline  {
 	width:100%;
 	background:white;
 	border:1px solid #ddd;
-	padding:25px 25px 25px 25px;
+	padding:25px 25px 10px 25px;
 	color:$link-color;
+
+	h1 {
+		margin-bottom:40px;
+	}
 	.icon-tag {
 		height:24px;
 	}
@@ -273,24 +225,27 @@ ul.inline  {
 	}
 	.description {
 		font-family:'RobotoLight', 'HelveticaNeue', Arial, sans-serif;
-		font-size:16px;
+		font-size:14px;
 		margin-bottom:10px;
 
 	}
 
 	.built_description {
 		margin-bottom:20px;
-				font-family:'RobotoLight', 'HelveticaNeue', Arial, sans-serif;
+		font-family:'HelveticaNeue', Arial, sans-serif;
+		margin-top:30px;
+		font-size:14px;
+		line-height:40px;
 
 	}
 
 	.well {
 		height:40px;
-		line-height:40px;
-		width:127px;
+		// line-height:40px;
+		// width:127px;
 
 		float:left;
-		font-size:16px;
+		// font-size:16px;
 		color:#bbb;
 		i {
 			font-size:100%;
@@ -310,6 +265,20 @@ ul.inline  {
 
 	.learn-more {
 			margin-right:7px;
+	}
+
+	.carousel {
+		// max-height:530px;
+		max-width:100%;
+		padding:0px;
+		margin:0px;
+		.carousel-inner {
+			max-width:85%;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
 	}
 
 	.btn {
@@ -342,12 +311,32 @@ ul.inline  {
 	
 }
 
+.emphasis {
+	font-family:'HelveticaNeue', Arial, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	// padding-left:10px;
+}
 
+.descript_icon {
+	font-size:20px;
+	color:#ddd;
+}
+
+.tag {
+	background-color: #F4F4EB;
+	color: rgba(0, 0, 0, 0.45098);
+	margin-right:10px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 5px;
+}
 
 #disgo_div {
 	img {
-		padding-bottom:0px;
-		margin-bottom:0px;
+		// padding-bottom:0px;
+		// margin-bottom:0px;
 		
 	}
 	overflow:hidden;
