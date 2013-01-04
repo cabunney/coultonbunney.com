@@ -131,6 +131,9 @@ body {
 }
 
 @media (min-width: 768px) {
+	.work {
+		min-height:430px !important;
+	}
 	.work-grid {
 		margin-left:10px;
 		margin-right:10px;
