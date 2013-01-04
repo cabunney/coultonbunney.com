@@ -49,18 +49,32 @@
 			</div>
 			<div class = "span6 img-span">
 
-				<div id="myCarousel2" class="carousel slide">
+				<!-- <div id="myCarousel2" class="carousel slide"> -->
 				  <!-- Carousel items -->
-				  <div class="carousel-inner">
+				 <!--  <div class="carousel-inner">
 				    <div class="active item item-1"><%=image_tag('disgo_full.png', :class =>'hidden-phone')%>
 					</div>
 				    <div class="item item-2"><%=image_tag('disgo_full_disc.png', :class =>'hidden-phone')%></div>
 				    <div class="item item-3"><%=image_tag('disgo_full_fav.png', :class =>'hidden-phone')%></div>
-				  </div>
+				  </div> -->
 				  <!-- Carousel nav -->
-				  <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+				<!--   <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
 				  <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
-				</div>
+				</div> -->
+				<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <%=image_tag('disgo_full.png', :class =>'hidden-phone')%>
+    </li>
+    <li>
+      <%=image_tag('disgo_full_disc.png', :class =>'hidden-phone')%>
+    </li>
+    <li>
+      <%=image_tag('disgo_full_fav.png', :class =>'hidden-phone')%>
+    </li>
+   
+  </ul>
+</div>
 			</div>
 			<!-- <div class = "clearfix"></div> -->
 		</div>
@@ -229,31 +243,39 @@
 </div>
 
 <script>
-	$('.carousel').carousel('pause');
-	$('.left').hide();
-	$('.d1').css('text-decoration','underline');
-	$('.carousel').bind('slid', function() {
-    	var left = $(this).parent().find('.active').hasClass('item-1');
-		var right = $(this).parent().find('.active').hasClass('item-3');
-		if (left) {
-			$(this).parent().find('.left').hide();
-			$(this).parent().parent().find('.emphasis').css('text-decoration','none');
-			$(this).parent().parent().find('.d1').css('text-decoration','underline');
+	// $('.carousel').carousel('pause');
+	// $('.left').hide();
+	// $('.d1').css('text-decoration','underline');
+	// $('.carousel').bind('slid', function() {
+ //    	var left = $(this).parent().find('.active').hasClass('item-1');
+	// 	var right = $(this).parent().find('.active').hasClass('item-3');
+	// 	if (left) {
+	// 		$(this).parent().find('.left').hide();
+	// 		$(this).parent().parent().find('.emphasis').css('text-decoration','none');
+	// 		$(this).parent().parent().find('.d1').css('text-decoration','underline');
 
-		} else if (right) {
-			$(this).parent().find('.right').hide();
-			$(this).parent().parent().find('.emphasis').css('text-decoration','none');
-			$(this).parent().parent().find('.d3').css('text-decoration','underline');
-		} else {
-			$(this).parent().find('.carousel-control').show();
-			$(this).parent().parent().find('.emphasis').css('text-decoration','none');
-			$(this).parent().parent().find('.d2').css('text-decoration','underline');
+	// 	} else if (right) {
+	// 		$(this).parent().find('.right').hide();
+	// 		$(this).parent().parent().find('.emphasis').css('text-decoration','none');
+	// 		$(this).parent().parent().find('.d3').css('text-decoration','underline');
+	// 	} else {
+	// 		$(this).parent().find('.carousel-control').show();
+	// 		$(this).parent().parent().find('.emphasis').css('text-decoration','none');
+	// 		$(this).parent().parent().find('.d2').css('text-decoration','underline');
 
-		}
-	})
+	// 	}
+	// })
 	 // $(document).ready(function(){
 	    // Target your .container, .wrapper, .post, etc.
 	    $("#pc_vid_cont").fitVids();
+			    $(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide",
+		     slideshow: false,
+		     
+		    // animationLoop: false
+		  });
+		});
   	// });
 
 	// $('.description').fitText(3, { minFontSize: '14px', maxFontSize: '14px' });
