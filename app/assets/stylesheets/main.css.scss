@@ -68,7 +68,7 @@ body {
 }
 
 @media (max-width:767px) { 
-	.carousel {
+	.carousel, #pc_vid_cont {
 		display:none !important;
 	}
 	.emphasis {
@@ -123,6 +123,7 @@ body {
 		margin-right:10px;
 	}
 	// .work {height:25em;}
+
 }
 
 @media (min-width: 980px) { 
@@ -239,7 +240,25 @@ ul.inline  {
 	}
 	.icon-tag {
 		height:24px;
+		margin-left:5px;
+		position:relative;
+		top:0px;
 
+	}
+
+	.icon-tag-h {
+		height:30px;
+		margin-left:5px;
+		position:relative;
+		top:-6px;
+
+	}
+
+	.icon-tag-w {
+		width:32px;
+	}
+	.icon-tag-w2 {
+		width:24px;
 	}
 	.span6 {
 		float:left;
@@ -366,13 +385,20 @@ ul.inline  {
 	padding-top: 5px;
 }
 
-#disgo_div {
+.span12 {
 	img {
 		// padding-bottom:0px;
 		// margin-bottom:0px;
 		
 	}
 	overflow:hidden;
+}
+
+#pc_vid_cont {
+	background:#ddd;
+	padding:10px;
+	margin-top:50px;
+	display:block;
 }
 
 
