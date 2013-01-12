@@ -1,6 +1,96 @@
 <% provide(:title, 'About') %>
 
-<div class="row-fluid full_page">
+<div class="row-fluid ">
   <div class="span12 no_padding">
+  	<section id="home" data-type="background" data-speed="10">
+  		 <article>
+
+  		 	<div class="row-fluid">
+				<div class = "span12 ">
+				
+					
+					  <h1>Hello</h1>
+					  <p class = 'about_me'>I am a Palo Alto based web developer and interaction designer. I've worked mainly in the startup space, and have been grateful enough to work with some very talented entreprenuers. I mainly focus on minimalist interfaces, and have recently learned the ropes of responsive design.</p>
+					 
+					
+				</div>
+			</div>
+
+			<div class="row-fluid">
+			
+			</div>
+  		 </article>
+  		 
+	</section>
+	<section id="pa" data-type="background" data-speed="10">
+		<article>
+			<div class="row-fluid">
+				<div class = "span12  clearfix">
+					<div class = "span12 clearfix">
+						<h1 class = "about_tit">Disgo     <%=image_tag('iphone_icon_w.png')%></h1>
+						<p class = 'about_me'>Using your location, Disgo presents you with crowdsourced quick facts about the place you are at. Borne out of a need for quick facts rather than ratings or opinions, Disgo makes every location a learning experience. </p>
+						<div class = "built_description hidden-phone"><span class = "tag">HTML5</span><span class = "tag">CSS3 </span><span class = "tag">PHP</span> <span class = "tag">JQuery Mobile </span><span class = "tag">Bootstrap</span></div>
+						<div>	
+							<%= link_to('http://bit.ly/godisgo') do %>
+				  				<div class = "btn link-to">bit.ly/godisgo <i class="icon-link"></i>
+								</div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</article>
+	</section>
+	<section id="lu" data-type="background" data-speed="10">
+		<article>
+			<div class="row-fluid">
+				<div class = "span12  clearfix">
+					<div class = "span12 clearfix">
+						<h1 class = "about_tit">LUMOback     <%=image_tag('iphone_icon.png')%> <%=image_tag('ipad_icon.png')%></h1>
+						<p class = 'about_me'>The LUMOback sensor is worn around the waist and gently vibrates when you slouch. The sensor connects wirelessly to a mobile app with a friendly avatar named LUMO who tracks your posture and activities in real time, mirroring your daily activities. </p>
+						<div class = "built_description hidden-phone"><span class = "tag">HTML5</span><span class = "tag">CSS3 </span><span class = "tag">PHP</span> <span class = "tag">JQuery Mobile </span><span class = "tag">Bootstrap</span></div>
+						<div>	
+							<%= link_to('http://bit.ly/godisgo') do %>
+				  				<div class = "btn link-to">bit.ly/godisgo <i class="icon-link"></i>
+								</div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</article>
+	</section>
   </div>
 </div>
+
+<script>
+
+function thirty_pc() {
+    var height = $(window).height();
+    // var thirtypc = (30 * height) / 100;
+    thirtypc = parseInt(height) + 'px';
+    $("#home").css('height',thirtypc);
+}
+$(".about_tit").fitText(2, { minFontSize: '50px', maxFontSize: '90px' });
+
+$(".about_me").fitText(2, { minFontSize: '14px', maxFontSize: '20px' });
+
+$(document).ready(function(){
+	
+    thirty_pc();
+    $(window).bind('resize', thirty_pc);
+	
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // assigning the object
+        $(window).scroll(function() {
+		var yPos = -( ($(window).scrollTop() - $bgobj.offset().top) / $bgobj.data('speed'));           
+		 // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        });
+    });
+});
+</script>
