@@ -508,10 +508,10 @@ header {
 
 #pa {
   background: url(sur.jpg) 50% 0 no-repeat fixed; 
-  // background-size:cover;
+  background-size:cover;
   // background:url()
-  background-position:right;
-  background-repeat: no-repeat;
+  // background-position:right;
+  // background-repeat: no-repeat;
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
@@ -538,14 +538,12 @@ header {
 
 #lu {
   background: url(lumo_back.jpg) 50% 0 no-repeat fixed; 
+
   // background-size:cover;
   // background:url()
-  background-position: top center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  
+  // background-repeat: no-repeat;
+  background-size:cover;
   min-height: 700px;
   height: 700px;
   margin: 0 auto;
