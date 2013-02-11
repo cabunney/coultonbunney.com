@@ -10,28 +10,34 @@
 <body>
 		<header class = "cont-nav">
 			<div id = "header" class="row-fluid ">	
-	  			<div id = "nav-l" class = "span6 ">
-	  				<a id = "logo" href="#" class = "r-nav">
+	  			<div id = "nav-l" class = "span12 ">
+	  				<a id = "logo" href="#" class = "r-nav hidden-phone">
 	  					Coulton Bunney
 	  				</a>
-	  			</div>
-	  			<div id = "nav-r" class = "span6 ">
-	  				<ul id = "nav-links" class = "inline">
-	  					<li>
-	  						<a href="/portfolio" class = "<%=@work_link%> nav-link"> 
-	  							<i class="icon-wrench nav-icon"></i>
-	  							<div class = "hidden-desktop center nav-div">Work</div>
-	  						</a>
-	  					</li>
-	  					<li>
-	  						<a href="/about" class = "<%=@about_link%> nav-link">
-	  						  <i class="icon-book nav-icon"></i>
-	  						  <div class = "hidden-desktop center nav-div">About</div>
-	  						</a>
-	  					</li>
-	  				</ul>
+	  				<a id = "logo" href="#" class = "r-nav visible-phone">
+	  					CB
 	  				</a>
+	  				<ul id = "nav-links" class = "inline">
+	  					<li >
+	  						<a href="/portfolio" class = "<%=@work_link%> nav-link" > 
+	  							<!-- <i class="icon-wrench nav-icon"></i> -->
+	  							Work
+	  						</a>
+	  					</li>
+	  					
+	  					<li >
+	  						<a href="/about" class = "<%=@about_link%> nav-link" >
+	  						<!-- <i class="icon-book nav-icon"></i> -->
+	  						  About
+	  						</a>
+
+	  					</li>
+	  					
+	  				
+	  				</ul>
+	  			
 	  			</div>
+	  			
 			</div>
 		</header>
 
