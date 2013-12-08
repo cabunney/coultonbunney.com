@@ -9,9 +9,11 @@ CoultonbunneyCom::Application.routes.draw do
   # Sample of regular route:
     root :to => 'main#portfolio'
 
-    match '/portfolio' => 'main#portfolio'
-    match '/about' => 'main#about'
-    match '/', to: 'main#portfolio'
+    match '/portfolio' => 'main#portfolio', via: 'get'
+    match '/about' => 'main#about',  via: 'get'
+        match 'old', to: 'main#portfolio_old',  via: 'get'
+
+    match '/', to: 'main#portfolio',  via: 'get'
 
 
   # Keep in mind you can assign values other than :controller and :action
