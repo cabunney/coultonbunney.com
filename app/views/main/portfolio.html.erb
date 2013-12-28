@@ -1,6 +1,13 @@
 <div id = "mainframe">
+			<div id="links" class="desk">
+				<a id="top" class="active"><div class="name">Top</div><div class="circle"></div></a>
+				<a id="lumo"><div class="name">Lumo BodyTech Inc.</div><div class="circle"></div></a>
+				<a id="chalk"><div class="name">Chalk Schools</div><div class="circle"></div></a>
+				<a id="disgo"><div class="name">Disgo</div><div class="circle"></div></a>
+
+			</div>
 	<div id="frame1">
-		<section id="construction">
+		<div id="construction">
 			<video preload="auto" autoplay loop="loop" poster='' muted='true'>
 			   <source src="<%=image_url('wind.mp4')%>" type='video/mp4' />
 			 
@@ -10,27 +17,65 @@
 
 			 <!-- <source /> -->
 			</video>
-		</section>
+		</div>
 		<div id="construction-blue">
+
 			<h1>
 				Willkommen
 			</h1>
 			<h3>
-				I'm Coulton. I specilaize in designing user experiences rooted in behavior change principles. 
+				I'm Coulton. I craft user experiences rooted in behavior change principles. 
 			</h3>
 
-			<div id="links">
-				<div>Some of my Projects:</div>
-				<a id="lumo">Lumo BodyTech Inc.</a>
-				<a id="chalk">Chalk Schools</a>
-				<a id="disgo">Disgo</a>
-
-			</div>
+	
 		</div>
 	</div>
 	<div id="frame2">
-		<h1>Lumo BodyTech Inc.</h1>
+		<h1>Lumo BodyTech, Inc.</h1>
 		<h5>Lead User Experience Designer and Web Developer</h5>
+		<h6>The LumoBack posture sensor is a wearable device that vibrates when a user slouches. I own the entire user experience of the product, developing the website, defining the hardware interactions, and laying out the app's user interface.</h6>
+		<div id="lumo_projects">
+
+
+			<div id ="strategy_mock" class="panel2 mock active">
+				<div class="number">1 <small>click to expand</small></div>
+				 <div class='right phone'><%= image_tag "rightarrow.png" %></div>
+				<div class="words">
+					<div class="title">Sensor Vibration Strategy</div>
+					<div class="problem"><strong>Design Challenge<br/> </strong>Users failed to have a clear mental model of when the sensor would vibrate when in bad posture.</div>
+					<div class="solution"><strong>Solution<br/> </strong>I spearheaded user interviews and guerilla usability testing, where I learned that users expect instant and constant negative feedback, along with the ability to "negotiate" with the sensor as to what is good versus bad posture. To solve for these expectations, a user can use a constant vibration within one second of falling into bad posture, or a single vibration for each new posture position.</div>
+				</div>
+					<div class="image image2 nonactive"></div>
+			</div>
+			
+			<div id ="cards_mock" class="panel1 mock hidden">
+				<div class="number">2 <small>click to expand</small></div>
+				 <div class='left phone'><%= image_tag "leftarrow.png" %></div>
+				 <div class='right phone'><%= image_tag "rightarrow.png" %></div>
+				<div class="words">
+					<div class="title">Insight Tiles</div>
+					<div class="problem"><strong>Design Challenge<br/> </strong>A user should not be overwhelmed with data, but should be able to access important information immediately.</div>
+					<div class="solution"><strong>Solution<br/> </strong>Via user interviews and think-aloud protocols with Task Rabbits, I discovered that users are most interested in single metrics delivered daily - a user very rarely compares days beyond yesterday and today. To accomodate this behavior, I designed insight tiles that reside on the lower half of the home screen. These give daily metrics with glanceable progress meters. </div>
+				</div>
+									<div class="image nonactive"></div>
+
+				
+			
+			</div>
+			
+			<div id ="vibration_mock" class="pane3 mock hidden">
+				<div class="number">3 <small>click to expand</small></div>
+				<div class='left phone'><%= image_tag "leftarrow.png" %></div>
+
+				<div class="words">
+					
+					<div class="title">User Defined Sensor Threshold</div>
+					<div class="problem"><strong>Design Challenge<br/> </strong>A user must be able to adjust how strict the sensor is about when he or she is slouching.</div>
+					<div class="solution"><strong>Solution<br/> </strong>Through a series of interactive HTML5 mocks, I discovered that this control must be posed as a question to the user, "When do you want the LumoBack sensor to buzz? When you are ...", accompanied by the avatar mimicking that amount of slouchiness. In order to control the avatar, a simple vertical slider is used.</div>
+				</div>
+					<div class="image nonactive image3"></div>
+			</div>
+		</div>
 	</div>
 
 	<div id="frame3">
