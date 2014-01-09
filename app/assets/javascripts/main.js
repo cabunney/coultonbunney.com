@@ -8,10 +8,42 @@ $(document).ready(function() {
  		$("#frame1").height($(window).height());
  	}
 	$("#lumo_projects>div").click(function() {
+		// $(this).parent().find(".active").animate({
+		// 		left: '7%',
+		// 	}, 700);
+		var panel = $(this).attr("title");
+		console.log(panel);
+		if (panel =="1") {
+			$(this).parent().find(".panel2").animate({
+				left: '85%',
+			}, 700);
+			$(this).parent().find(".panel3").animate({
+				left: '92%',
+			}, 700);
+		}
+
+		if (panel == "2") {
+			$(this).parent().find(".panel2").animate({
+				left: '7%',
+			}, 700);
+			$(this).parent().find(".panel3").animate({
+				left: '92%',
+			}, 700);
+
+		}
+
+		if (panel == "3") {
+			$(this).parent().find(".panel2").animate({
+				left: '7%',
+			}, 700);
+			$(this).parent().find(".panel3").animate({
+				left: '14%',
+			}, 700);
+		}
 		$(this).parent().find(".active").removeClass("active").addClass("hidden");
-		$(this).addClass("active").removeClass("hidden");
-		$(this).find(".number small").fadeOut();
-		
+				$(this).addClass("active").removeClass("hidden");
+				$(this).find(".number small").fadeOut();
+
 	});
 
 	$("#links").hover(
