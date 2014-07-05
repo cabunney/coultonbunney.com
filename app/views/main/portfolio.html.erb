@@ -1,90 +1,186 @@
-<div id = "mainframe">
-			<div id="links" class="desk">
-				<a id="top" class="active"><div class="name">Top</div><div class="circle"></div></a>
-				<a id="lumo"><div class="name">Lumo BodyTech Inc.</div><div class="circle"></div></a>
-				<!-- <a id="chalk"><div class="name">Chalk Schools</div><div class="circle"></div></a>
-				<a id="disgo"><div class="name">Disgo</div><div class="circle"></div></a> -->
+<div id="mainframe">
 
-			</div>
-	<div id="frame1">
-		<div id="construction">
-			<video preload="auto" autoplay loop="loop" poster='' muted='true'>
-			   <source src="<%=image_url('wind.mp4')%>" type='video/mp4' />
-			 
+	<div id="hero">
 
-			   <!-- <img src="/wp-content/themes/Lumo-Child/images/magic_of_lumo_screen.jpg" title="Your browser does not support the <video> tag" style="display:none">  
- -->
-
-			 <!-- <source /> -->
-			</video>
+		<div id="me" class="header1">
+			<div class="blue"><a href="#about" class="blue">Coulton Bunney</a></div>
+			<div class="mid-black"><a href="#ux" class="mid-black">User Experience</a></div>
 		</div>
-		<div id="construction-blue">
 
-			<h1>
-				Willkommen
-			</h1>
-			<h3>
-				I'm Coulton. I craft user experiences rooted in behavior change principles. 
-			</h3>
+	</div>
+
+	<div class="challenges">
+		<div class="description-left light-black ">Current challenge</div>
+		<div class="mid-black description-right">
+			<div><a href="#lift" class="mid-black">Building a trustworthy and reliable wellness assistant <span class="light-black">></span></a></div>
+		</div>
+	</div>
 
 	
+	<div class="challenges">
+		<div class="description-left light-black top">
+			<div class="top">Completed challenges</div>
+		</div>
+		<div class="mid-black description-right">
+			<div><a href="#back" class="mid-black">Creating a consistent and accurate wearable experience <span class="light-black">></span></a></div>
+			<div><a href="#chalk" class="mid-black">Automating school paperwork for educators <span class="light-black">></span></a></div>
 		</div>
 	</div>
-	<div id="frame2">
-		<h1>Lumo BodyTech, Inc.</h1>
-		<h5>Lead User Experience Designer and Web Developer</h5>
-		<h6>The Lumo Back posture sensor is a wearable device that vibrates when a user slouches. I own the entire user experience of the product, developing the website, defining the hardware interactions, and laying out the app's user interface.</h6>
-		<div id="lumo_projects">
 
-
-			<div id ="strategy_mock" class="panel1 mock active" title="1">
-				<div class="number">1 <small>click to expand</small></div>
-				 <div class='right phone'><%= image_tag "rightarrow.png" %></div>
-				<div class="words">
-					<div class="title">Sensor Vibration Strategy</div>
-					<div class="problem"><strong>Design Challenge<br/> </strong>Users failed to have a clear mental model of when the sensor would vibrate when in bad posture.</div>
-					<div class="solution"><strong>Solution<br/> </strong>I spearheaded user interviews and guerilla usability testing, where I learned that users expect instant and constant negative feedback, along with the ability to "negotiate" with the sensor as to what is good versus bad posture. To solve for these expectations, a user can choose a constant vibration within one second of falling into bad posture, or a single vibration for each new posture position.</div>
-				</div>
-					<div class="image image2 nonactive"></div>
-			</div>
+	<div id="lift">
+		<div class="panel-title header1">
+			<div><span class="black">Lead Designer</span><span class="lumo-green">Lumo Lift</span></div>
+			<div class="light-black">Building a trustworthy and reliable wellness assistant</div>
+		</div>
 			
-			<div id ="cards_mock" class="panel2 mock hidden" title="2">
-				<div class="number">2 <small>click to expand</small></div>
-				 <div class='left phone'><%= image_tag "leftarrow.png" %></div>
-				 <div class='right phone'><%= image_tag "rightarrow.png" %></div>
-				<div class="words">
-					<div class="title">Insight Tiles</div>
-					<div class="problem"><strong>Design Challenge<br/> </strong>A user should not be overwhelmed with data, but should be able to access important information immediately.</div>
-					<div class="solution"><strong>Solution<br/> </strong>Via user interviews and think-aloud protocols with testers, I discovered that users are most interested in single metrics delivered daily - a user very rarely compares days beyond yesterday and today. To accomodate this behavior, I designed insight tiles that reside on the lower half of the home screen. These give daily metrics with glanceable progress meters. </div>
+		<div class="panel30">
+	
+			<div class="image">
+				<%=image_tag('black-sensor-with-clasp.png', :class =>'phone')%>
+			</div>
+			<div class="description">
+				<div class="title">
+					Make hardware unobtrusive
 				</div>
-									<div class="image nonactive"></div>
+				In order to solve the problem of poor upper body posture and sedentary behavior, we designed a device to be worn like a brooch or lapel pin. The Lumo Lift tracks posture, steps, distance, and calories. I formulated the main hardware interaction with the device, patented as the Bunney Button.
+			</div>
+		</div>
+		<div class="panel30">
+			<div class="image">
+			<%=image_tag('lift_main.png', :class =>'phone')%>
+		</div>
+			<div class="description mid-black">
+				<div class="title">
+					Make data understandable
+				</div>
+				A user can quickly check the app to find out how they've been doing for the last hour, and over the course of the day. I did not want users to have to parse numbers or data, so I decided to remove all numbers from the main screen of the app. Instead, we provide qualitative insights into your recent posture and activity along with the ability to access the quantiative evidence informing these insights.
+			</div>
 
+		</div>
+		<div class="panel30">
 				
-			
+			<div class="image">
+			<%=image_tag('lift_l.png', :class =>'phone')%>
 			</div>
-			
-			<div id ="vibration_mock" class="panel3 mock hidden" title="3">
-				<div class="number">3 <small>click to expand</small></div>
-				<div class='left phone'><%= image_tag "leftarrow.png" %></div>
-
-				<div class="words">
-					
-					<div class="title">User Defined Sensor Threshold</div>
-					<div class="problem"><strong>Design Challenge<br/> </strong>A user must be able to adjust how strict the sensor is about when he or she is slouching.</div>
-					<div class="solution"><strong>Solution<br/> </strong>Through a series of interactive HTML5 mocks, I discovered that this control must be posed as a question to the user, "When do you want the LumoBack sensor to buzz? When you are ...", accompanied by the avatar mimicking that amount of slouchiness. In order to control the avatar, a simple vertical slider is used.</div>
+			<div class="description mid-black">
+				<div class="title">
+					Make feedback friendly
 				</div>
-					<div class="image nonactive image3"></div>
+				Based on research by the late Clifford Nass of Stanford University, I designed a trustworthy soial actor named L that can tell you exactly how your posture is. L tells you when your posture is good, giving praise along the way. When you're slouching, she'll give you a gentle nudge to straighten up. Her engaging personality makes the sometimes difficult task of good posture a team endeavor.
 			</div>
+
 		</div>
 	</div>
 
-	<div id="frame3">
-		<h1>Chalk Schools</h1>
-		<h5>Co-founder, Designer, and Front End Developer</h5>
-		<h6>Chalk Schools is a web application that helps educators collect e-signatures, batch process paperwork for entire classrooms, track responses, and archive important communications.</h6>
+	<div id="back">
+		<div class="panel-title header1">
+			<div><span class="black">UX Designer</span><span class="lumo-green">Lumo Back</span></div>
+			<div class="light-black">Creating a consistent and accurate wearable experience</div>
+		</div>
+			
+		<div class="panel30">
+	
+			<div class="image">
+				<%=image_tag('lb-folded-full.png', :class =>'lb')%>
+			</div>
+			<div class="description">
+				<div class="title">
+					Keep hardware invisible
+				</div>
+				In order to solve the problem of poor upper body posture and sedentary behavior, we designed a device to be worn like a brooch or lapel pin. The Lumo Lift tracks posture, steps, distance, and calories. I formulated the main hardware interaction with the device, patented as the Bunney Button.
+			</div>
+		</div>
+		<div class="panel30">
+			<div class="image">
+			<%=image_tag('back_main.png', :class =>'phone')%>
+		</div>
+			<div class="description mid-black">
+				<div class="title">
+					Keep data glanceable
+				</div>
+				A user can quickly check the app to find out how they've been doing for the last hour, and over the course of the day. I did not want users to have to parse numbers or data, so I decided to remove all numbers from the main screen of the app. Instead, we provide qualitative insights into your recent posture and activity along with the ability to access the quantiative evidence informing these insights.
+			</div>
+
+		</div>
+		<div class="panel30">
+				
+			<div class="image">
+			<%=image_tag('back_max.png', :class =>'phone')%>
+			</div>
+			<div class="description mid-black">
+				<div class="title">
+					Keep progress detailed
+				</div>
+				Based on research by the late Clifford Nass of Stanford University, I designed a trustworthy soial actor named L that can tell you exactly how your posture is. L tells you when your posture is good, giving praise along the way. When you're slouching, she'll give you a gentle nudge to straighten up. Her engaging personality makes the sometimes difficult task of good posture a team endeavor.
+			</div>
+
+		</div>
 	</div>
 
-	<div id="frame4">
+	<div id="chalk">
+		<div class="panel-title header1">
+			<div><span class="black">Co-founder</span><span class="lumo-green">Chalk Schools</span></div>
+			<div class="light-black">Automating paperwork for educators</div>
+		</div>	
+		<div class="panel50">
+	
+			<div class="image">
+				<%=image_tag('chalk_drag_drop_desktop.png', :class =>'desktop')%>
+			</div>
+			<div class="description mid-black">
+				<div class="title">
+					Automate paperwork completion 
+				</div>
+				In order to solve the problem of poor upper body posture and sedentary behavior, we designed a device to be worn like a brooch or lapel pin. The Lumo Lift tracks posture, steps, distance, and calories. I formulated the main hardware interaction with the device, patented as the Bunney Button.
+			</div>
+		</div>
+		<div class="panel50">
+			<div class="image">
+				<%=image_tag('chalk_track_desktop.png', :class =>'desktop')%>
+			</div>
+			<div class="description mid-black">
+				<div class="title">
+					Automate paperwork tracking
+				</div>
+				A user can quickly check the app to find out how they've been doing for the last hour, and over the course of the day. I did not want users to have to parse numbers or data, so I decided to remove all numbers from the main screen of the app. Instead, we provide qualitative insights into your recent posture and activity along with the ability to access the quantiative evidence informing these insights.
+			</div>
+
+		</div>
+	
 	</div>
 
+
+	<div id="about">
+	
+			
+		<div class="panel30">
+	
+			<div class="image">
+				<%=image_tag('myface_2.jpg', :class =>'face')%>
+			</div>
+			
+		</div>
+		<div class="panel60">
+			<div class="panel-title">
+				Coulton Bunney designs affective computing experiences rooted in cognitive and behavioral research.
+			</div>	
+			<div class="panel50">
+				<div class="description mid-black">
+				
+					A user can quickly check the app to find out how they've been doing for the last hour, and over the course of the day. I did not want users to have to parse numbers or data, so I decided to remove all numbers from the main screen of the app. Instead, we provide qualitative insights into your recent posture and activity along with the ability to access the 
+				</div>
+			</div>
+			<div class="panel50">
+				<div class="description mid-black">
+					
+					A user can quickly check the app to find out how they've been doing for the last hour, and over the course of the day. I did not want users to have to parse numbers or data, so I decided to remove all numbers from the main screen of the app. Instead, we provide qualitative insights into your recent posture and activity along with the ability to access the 
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+
+
+	
 </div>

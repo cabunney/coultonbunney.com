@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title(yield(:title)) %></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title><%= full_title(yield(:title)) %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-	<!-- 	<header id = "cont-nav">
-			<div id = "header" class="row-fluid ">	
-	  			<div id = "nav-l" class = "span12 ">
-	  				<a id = "logo" href="#" class = "r-nav hidden-phone">
-	  					Coulton Bunney
-	  				</a>
-	  				<a id = "logo" href="#" class = "r-nav visible-phone">
-	  					CB
-	  				</a>
+	<!-- <header id = "cont-nav">
+		<div id = "header" class="row-fluid ">	
+			<div id = "nav-l" class = "span12 ">
+	  		
 	  				<ul id = "nav-links" class = "inline">
 	  					<li >
 	  						<a href="/portfolio" class = "<%=@work_link%> nav-link" > 
@@ -26,20 +21,20 @@
 	  					
 	  					<li >
 	  						<a href="/about" class = "<%=@about_link%> nav-link" >
-	  						  About
+	  							About
 	  						</a>
 
 	  					</li>
 	  					
-	  				
+
 	  				</ul>
-	  			
+
 	  			</div>
 	  			
-			</div>
-		</header>
+	  		</div>
+	  	</header>
  -->
-	<%= yield %>
+	  	<%= yield %>
 
-</body>
-</html>
+	  </body>
+	  </html>
