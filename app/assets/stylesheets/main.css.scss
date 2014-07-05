@@ -283,6 +283,7 @@ header {
 			 // width:100%;
 			 max-height:100%;
 			 height:auto;
+			 max-width:100%;
 		
 		}
 
@@ -437,6 +438,13 @@ and (max-width : 764px) {
 			}
 		}
 
+		.panel50 {
+			width:100%;
+		}
+
+		.panel60 {
+			width:100%;
+		}
 		#lift{
 			.panel30:nth-child(2) {
 				margin-top:-400px;
@@ -448,6 +456,21 @@ and (max-width : 764px) {
 		#back {
 			.panel30:nth-child(2) {
 				margin-top:-250px;
+			}
+		}
+
+		#chalk {
+			.panel50 {
+				margin-top:50px;
+			}
+			.image {
+				height:300px;
+			}
+		}
+
+		#about {
+			.panel-title {
+				font-size:24px;
 			}
 		}
 	}
