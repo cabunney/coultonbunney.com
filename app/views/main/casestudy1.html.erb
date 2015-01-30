@@ -1,0 +1,159 @@
+<!-- <header id = "casestudy-header-bar">
+	<div id = "header" >	
+		<div class="header-option">
+		<a href="/" class="link">Home</a>
+		</div>
+	  			
+  	</div>
+  </header> -->
+
+  <div id="mainframe" class="casestudy">
+
+  	<div id="casestudy-header">
+
+
+  		<div class="panel50">
+  			<div class="product-name">Lumo Lift</div>
+  			<div class="project-name">Ten Second Experience</div>
+  			<div class="project-description">Sync posture and activity from Lumo Lift to iPhone in a delightful and engaging way</div>
+  		</div>
+
+  		<div class="panel50">
+  			<div class="section-video">
+  				<%= video_tag("10sec_final.mp4", controls: true, autoplay: true, loop: false, poster: '10sec_final.png') %>
+  			</div>
+  		</div>
+
+
+  	</div>
+
+  	<div id="casestudy-section-first" class="casestudy-section">
+  		<div class="section-header"><div class="number">1</div><br>The problem</div>
+  		<div class="section-paragraph">Due to limitations of Bluetooth Low Energy, transferring posture and activity from the Lumo Lift to the iPhone is painfully slow &ndash; taking on average 60 seconds when syncing one time per day. When I looked at Google Analytics, I found that average session duration was much shorter than this. Effectively, users weren't staying long enough to get their data. And without data, the app experience is severely hamstrung. So, we had our problem cut out for us. There was no way the data could technically sync faster. We needed a four lane highway for data transfer, but we only had one lane to work with and no possibility for expansion. How do we get data to seemingly sync faster without actually being up to speed up data transfer rates?</div>
+  		<div class="section-quote"><div class="section-quote-separator"></div><div class="quote">Effectively, users weren't staying long enough to get their data. We needed a four lane highway for data transfer, but we only had one lane to work with and no possibility for expansion.</div><div class="section-quote-separator"></div></div>
+
+  		<div class="section-subheader">Here is what we started with</div>
+  		<div class="section-video">
+  			<%= video_tag("landingpage_old.mp4", controls: true) %>
+  		</div>
+
+
+  	</div>
+
+  	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">2</div><br>The team</div>
+  		<div class="section-paragraph">I was fortunate enough to work with an amazing visual designer, Phillip La, on this project and together we reported to Lumo's co-founder and Head of Product, Charles Wang. I was responsible for finding the evidence to support the problem laid out above, designing the inital concept, laying out the interaction patter to be used, and measuring the efficacy and success of our designed solution.<br><br>Once I had completed and gone through three to four iterations for the inital designs and interactions, I passed my work onto Phillip who then took my UX, added his own unqiue perspective to the design and applied a fresh coat of paint to the concept. After getting the green light from Charles, I then worked very closely with our engineering team to get the concept implemented.</div>
+
+
+  	</div>
+
+  	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">3</div><br>The idea</div>
+  		<div class="section-paragraph">Right off the bat, we knew we needed to accomplish two things. First, we needed to present some sort of data to the user within 10 seconds of opening the app &ndash; the amount of time we observed users staying interested. Second, we needed to get users to open the app more often, so the amount of data being synced in one shot was reduced. Data transfer rate is linear with amount of data, so twice as much data means twice as much waiting for sycning to complete. Therefore, if we were able to get users to open the app twice as much in a day, sync time would consequently be halved.</div>
+  		<div class="panel50">
+  			<div class="section-subheader">Present key data within 10 seconds</div>
+  			<div class="section-paragraph">In order to understand how we might design a more effective sycning process, I first sat down with our head engineer to learn all there is to know about Lumo Lift data storage. I learned that Lift separately measures cumulative good posture hours, cumulative steps, and second by second historical data. The historical data constitutes the vast majority of stored data.<br><br>My idea was to update the interface with today's cumulative data as soon as it is received while historical data continues to sync in parallel. Thus, we'd give users valuable information without needing to wait for all of the data to fully transfer, also creating the perception that syncing lasts ten seconds or less without actually needing to speed up the data transfer rate.</div>
+  		</div>
+
+  		<div class="panel50">
+  			<div class="section-subheader">Get users to open app more often</div>
+  			<div class="section-paragraph">The more times you open the app, the less data there is to transfer each time. After doing some initial behavioral design research, I found that variable rewards are a winning strategy to get a higher rate of engagement. Up to that point, we simply updated the interface with the latest data, but didn't tell the users how much progress they had made since last app open or put their data into any sort of context. We needed a stronger hook.<br><br>To open up a larger world of variable updates when sycning, I wanted to present three new key pieces of information. The amount of data you've accumulated since last app open, mini achivements based on recent data (for example, "that last walk was your longest of the day!"), and also show visual progress towards set goals.</div>
+  		</div>
+
+  		<div class="section-quote"><div class="section-quote-separator"></div><div class="quote">My idea was to update the interface with today's cumulative data as soon as it is received while historical data continues to sync in parallel [...] creating the perception that syncing lasts ten seconds or less without actually needing to speed up the data transfer rate.</div><div class="section-quote-separator"></div></div>
+  	</div>
+
+  	<div class="casestudy-section">
+
+  		<div class="section-header"><div class="number">4</div><br>The design</div>
+
+
+
+  		<div class="section-subheader"><div class=" version">V1</div></div>
+  		<div class="section-paragraph">For my first mock, I utilized Sketch to create the process I had imagined for the 10 second syncing experience. A user would open the app and the syncing experience would commence. First, they'd wait for their sensor to connect to the app. Second, they'd receive an overlay outlining what exactly was happening. It would have three steps. A quick, friendly greeting. Gathering data. Analyzing data. Third, once the cumulative data was received, the user would be presented with a Progress Update. A user would be unable to exit out of this process, since it was mandatory that the sensor sync. Fourth, the user would be presented with a Highlight that would change depending on the data just received. Lastly, they'd exit out of the overlay, and be greeted with a ring showing progress towards the respective goal. Keep in mind that Historical syncing is still going on during this entire process.</div>
+  		<div class="section-image desktop">
+  			<%=image_tag('Landing_page_1.png', :class =>'')%>
+  		</div>
+  		<div class="section-image mobile">
+  			<%=image_tag('Landing_page_1_vert.png', :class =>'')%>
+  		</div>
+
+  		<div class="section-subheader"><div class=" version">V2</div></div>
+  		<div class="section-paragraph">After presenting my work to the entire company at our Friday product meeting, I received two key pieces of feedback. First, people really didn't like the white overlay. They were worried that it'd hinder user interactions with other parts of the app, such as the Menu. Second, while the Highlight part of the section was super interesting, not only would it take an extra month or two to develop, it also lengthened the experience. So, with V2, I tried to address these concerns by simply removing the white background and replacing the orbs, while removing the Highlight, tabling it for another time (don't worry, we haven't forgotten about Highlight...).</div>
+  		<div class="section-image desktop">
+  			<%=image_tag('Landing_page_2.png', :class =>'')%>
+  		</div>
+  		<div class="section-image mobile">
+  			<%=image_tag('Landing_page_2_vert.png', :class =>'')%>
+  		</div>
+  		<div class="section-video">
+  			<%= video_tag("landingpage2.mp4", controls: true) %>
+  		</div>
+
+  		<div class="section-subheader"><div class=" version">V3</div></div>
+  		<div class="section-paragraph">I definitely was getting closer to the flow I had wanted to create. But, after getting some additional feedback, there were three things I could change to further the experience. First, the initial part of the experience did not communicate that the app was connecting to the sensor. A user might believe this to be an error, so I wanted to use the orbs to show that the sensor was connecting. Second, with V2, after working very closely with engineering, I found that we could completely get rid of the Data Syncing from Sensor portion of the flow &ndash; the cumulative data would be received within a second or two of connecting, so we could simply extend the connecting animation to include gathering data, as well. Instead of the Progress Update overlay, I decided to present the Update as a simple popdown. Lastly, I spiced up the orb progress rings by animating them from zero to current progress.</div>
+  		<div class="section-image desktop">
+  			<%=image_tag('Landing_page_3.png', :class =>'')%>
+  		</div>
+  		<div class="section-image mobile">
+  			<%=image_tag('Landing_page_3_vert.png', :class =>'')%>
+  		</div>
+  		<div class="section-video">
+  			<%= video_tag("landingpage4.mp4", controls: true) %>
+  		</div>
+
+  		<div class="section-subheader"><div class=" version">V4 - Final UX and flashy animations</div></div>
+  		<div class="section-paragraph">We had finally made it the final UX. I made two changes to this last version. I made the sensor connecting animation more interesting by making them start in two different places on the orb. Second, instead of a progress popdown, I used a spring animation to present a progress update within the respective orb. I mocked this up in Pixate, and passed it along to Phillip.</div>
+
+  		<div class="section-video">
+  			<%= video_tag("10secexp_finalux.mp4", controls: true) %>
+  		</div>
+  		<div class="section-paragraph info">Created with <a href="http://www.pixate.com">Pixate</a>
+  		</div>
+
+
+
+  	</div>
+
+	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">5</div><br>Success Metrics</div>
+  		<div class="section-paragraph">At the outset of this project, we had had two goals. First, we need to get people to stay long enough to see their data. Second, we wanted to get people to return to the app more frequently. Luckily, we achieved both of these goals, with resounding success. When comparing version 1.4 of the app to v1.5 (before and after the ten second experience was implemented), we saw average session duration and number of sessions per user double. 
+  		</div>
+  		  		<div class="section-subheader"><div class=" ">Before and after 10 second experience</div></div>
+
+  		<div class="section-image">
+  			<%=image_tag('Success_metrics.png', :class =>'')%>
+  		</div>
+
+
+
+  	</div>
+
+  	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">6</div><br>Final Video</div>
+  		<div class="section-video section-video-large">
+  			<%= video_tag("10sec_hero.mp4", controls: true, muted:true) %>
+  		</div>
+
+  		
+
+  	</div>
+
+  		<div class="casestudy-section">
+  	
+
+  		<div class="section-button">
+  			<a href="/">Return to portfolio</a>
+  		</div>
+  		
+
+
+  	</div>
+
+
+
+
+
+
+
+  </div>

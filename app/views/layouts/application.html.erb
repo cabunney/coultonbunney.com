@@ -8,33 +8,9 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-	<!-- <header id = "cont-nav">
-		<div id = "header" class="row-fluid ">	
-			<div id = "nav-l" class = "span12 ">
-	  		
-	  				<ul id = "nav-links" class = "inline">
-	  					<li >
-	  						<a href="/portfolio" class = "<%=@work_link%> nav-link" > 
-	  							Work
-	  						</a>
-	  					</li>
-	  					
-	  					<li >
-	  						<a href="/about" class = "<%=@about_link%> nav-link" >
-	  							About
-	  						</a>
+	
 
-	  					</li>
-	  					
+  	<%= yield %>
 
-	  				</ul>
-
-	  			</div>
-	  			
-	  		</div>
-	  	</header>
- -->
-	  	<%= yield %>
-
-	  </body>
-	  </html>
+  </body>
+</html>

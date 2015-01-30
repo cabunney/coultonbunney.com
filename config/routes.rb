@@ -11,9 +11,12 @@ CoultonbunneyCom::Application.routes.draw do
 
     match '/portfolio' => 'main#portfolio', via: 'get'
     match '/about' => 'main#about',  via: 'get'
-        match 'old', to: 'main#portfolio_old',  via: 'get'
+        match '/old' => 'main#portfolio_old',  via: 'get'
+        match '/10-sec-experience' => 'main#casestudy1',  via: 'get'
 
-    match '/', to: 'main#portfolio',  via: 'get'
+    match '/' => 'main#portfolio',  via: 'get'
+
+    get 'main/download'
 
 
   # Keep in mind you can assign values other than :controller and :action
