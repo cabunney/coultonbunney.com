@@ -13,6 +13,7 @@ CoultonbunneyCom::Application.routes.draw do
     match '/about' => 'main#about',  via: 'get'
         match '/old' => 'main#portfolio_old',  via: 'get'
         match '/10-sec-experience' => 'main#casestudy1',  via: 'get'
+        match '/insight-tiles' => 'main#casestudy2',  via: 'get'
 
     match '/' => 'main#portfolio',  via: 'get'
 

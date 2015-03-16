@@ -1,0 +1,190 @@
+<!-- <header id = "casestudy-header-bar">
+	<div id = "header" >	
+		<div class="header-option">
+		<a href="/" class="link">Home</a>
+		</div>
+	  			
+  	</div>
+  </header> -->
+
+  <div id="mainframe" class="casestudy">
+
+  	<div id="casestudy-header" class="casestudy-header-back">
+
+  <div class="panel50">
+        <div class="section-video">
+          <%= video_tag("insighttiles.mp4", controls: true, autoplay: true, loop: false, poster: 'insighttilesposter.png', muted:true) %>
+        </div>
+      </div>
+  		<div class="panel50 back">
+  			<div class="product-name">Lumo Back</div>
+  			<div class="project-name">Posture + Activity Insight Tiles</div>
+  			<div class="project-description">Help motivate people to live healthier lives by providing them easy-to-understand activity metrics: posture, steps, time spent sitting, number of stand ups, and sleep.</div>
+  		</div>
+
+  	
+
+
+  	</div>
+
+  	<div id="casestudy-section-first" class="casestudy-section">
+  		<div class="section-header"><div class="number">1</div><br>The problem</div>
+  		<div class="section-paragraph">We were seeing sales for the Lumo Back wearable slow down, and we attributed this to low user retention. Users were quite smitten with the device, but it didn’t really have legs. The data that was being presented to users was correct, but all in all, it was simply data. Many of users had purchased the device hoping it could be the gateway to living without back pain. So, we set out on a project to help do this more effectively, and answer a simple question. How do you translate data into insights that could help a user develop better posture and live more active lives?</div>
+  		<div class="section-quote"><div class="section-quote-separator"></div><div class="quote">How do you translate data into insights that could help a user develop better posture and live more active lives?</div><div class="section-quote-separator"></div></div>
+
+  		<div class="section-subheader">Here is what we started with</div>
+  		<div class="section-image">
+  			<%= image_tag("lbv1.png", :class=>"center" )%>
+  		</div>
+
+
+  	</div>
+
+  	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">2</div><br>The team</div>
+  		<div class="section-paragraph">This was one of my first major projects after coming on with Lumo full-time after I graduated from Stanford. I was responsible for conducting a lot of the user interviewing, leading the initial design exploration, and coming up with the final interaction patterns to be used.<br><br>Once I had sketched, validated and refined each of the three major phases of the insight tile design process, I passed my work on to Phillip, who added his own unqiue perspective to my design and applied a fresh coat of paint to the concept. After getting the green light from our then head of product, Monifa Porter, I provided additional design input while the concept implemented.</div>
+
+
+  	</div>
+
+  	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">3</div><br>The idea</div>
+      <div class="section-image">
+        <%= image_tag("insighttilevenn.png", :class=>"center" )%>
+      </div>
+  		<div class="section-paragraph">Lumo had already had thousands of early users from the successful Kickstarter we ran, so to gather information about what our users wanted, I scheduled several user interviews — in person and on the phone. We saw three very pieces of feedback bubble up to the surface during this process. First, users needed data about their posture and activity today. When opening the app, they were most interested in today’s progress as opposed to historical information. Importantly, it was integral that this information be glanceable and didn’t require much thought to comprehend. Second, in order to get better, users needed motivation. This glanceable information must give them insight into how far they were towards achieving the goals they had set out to accomplish. Third, despite the want for simple glanceable information, we also needed to include the ability to go deeper into the information if wanted. Lumo Back’s users were very heavily data-oriented. This was not as much a lifestyle tool as it was a real health tool.</div>
+
+      <div class="section-paragraph">I knew that our redesign had to focus around these three needs. That’s when the idea for Insight Tiles hit me. What if we could give users tiny little tiles that could tell them the most important information at a glance, how close they were to achieving their goals, and also provide an interaction to go deeper into the information? It’d be like a tiny, usable dashboard giving you all the insight into your data that you desired. However, at this point, I had very little idea what insight tiles might look like, so my first task to figure out what information resided in these tiles.  </div>
+  	
+
+  		<div class="section-quote"><div class="section-quote-separator"></div><div class="quote">What if we could give users tiny little tiles that could tell them the most important information at a glance, how close they were to achieving their goals, and also provide an interaction to go deeper into the information?</div><div class="section-quote-separator"></div></div>
+  	</div>
+
+  	<div class="casestudy-section">
+
+  		<div class="section-header"><div class="number">4</div><br>The design</div>
+
+
+
+  		<div class="section-subheader"><div class=" version">Phase 1: What metrics are on the insight tiles?</div></div>
+  		<div class="section-paragraph">In order to figure out which metrics were included in the Insight Tiles, I recruited several users for an in-person need finding technique I call card sorting. Basically, the product team and I came up with around 15 different metrics we knew we could return based on the data collected from the sensor. We then presented these to the users, and had them sort the metrics from most useful to least useful. Additionally, we asked them why they picked the order that they picked.</div>
+      <div class="section-paragraph">Through this process, five metrics rose to the top. Posture + Sit Time + Steps + Sleep + Stand Ups. Together, these metrics could tell the user a lot about their day. You can see that with just these five metrics, we could help our users really get insight into how healthy they were over the coures of the day. From their bed, to the office, to their exercise at night. Now that we had our five metrics chosen, it was time to really delve into the design of the metrics themselves. How might these metrics be presented to the user to give insight + motivate them to be better. <br><br></div>
+  		<div class="section-image ">
+  			<%=image_tag('cardsorting.png', :class =>'')%>
+  		</div>
+  	
+
+  		<div class="section-subheader"><div class=" version">Phase 2: HOW ARE THE METRICS PRESENTED?</div></div>
+
+      <div class="section-image cards">
+        <%=image_tag('posture.png', :class =>'')%>
+      </div>
+  		<div class="section-paragraph">We started with posture. Posture is an extraordinarily difficult thing to quantify. There is no accepted metric, like there is with other metrics such as steps. So, we had to actually define one that could help our users improve over time, and also within a day. We were more or less inventing a standard by which all other products measuring your posture will use.<br><br><br></div>
+  		 <div class="section-image cards">
+        <%=image_tag('steps.png', :class =>'')%>
+      </div>
+      <div class="section-paragraph">Moving onto Steps, this one was a bit easier to visualize. First, steps is a unidirectional metric. It only increases. So, we knew we didn’t have to do anything as fancy as Steps. However, given the wealth of other step tracking devices, we wanted to differentiate ourselves visually. So rather than a progress bar, we chose to go with a progress gauge.<br><br><br></div>
+  	  <div class="section-image cards">
+        <%=image_tag('standups.png', :class =>'')%>
+      </div>
+      <div class="section-paragraph">Moving onto Stand Ups, this one we wanted to make as simple as possible. So, we went with a simple vertical progress bar that increase upwards as you stood up more often. In addition, because stand ups is so novel, we also provide comparison metrics on this card.<br><br><br></div>
+       <div class="section-image cards">
+        <%=image_tag('sitsleep.png', :class =>'')%>
+      </div>
+      <div class="section-paragraph">Lastly, we went with just simple readouts for sit time and sleep. Because sleep isn’t something you can make progress on, it made no sense to visualize its progress. Additionally, sit time is a metric you don’t want to increase, so we didn’t include progress.</div>
+    
+
+
+      <div class="section-subheader"><div class=" version">Phase 2: Final Visual Design</div></div>
+      <div class="section-image cards">
+        <%=image_tag('cardsfinal.png', :class =>'final')%>
+      </div>
+      <div class="section-paragraph">Then, based on these sketches we came up with the final design of the insight tiles. The design didn’t change much at all.</div>
+     
+
+  		<div class="section-subheader"><div class=" version">Phase 3: how do insight tiles fit into the UI?</div></div>
+      <div class="section-image ">
+        <%=image_tag('cardslayout.png', :class =>'')%>
+      </div>
+  		<div class="section-paragraph">Now that we had these awesome insight tiles, we needed to figure out how to fit them into the user interface. A main part of the Lumo Back experience is the Lumo avatar. This avatar mimics your movements in real-time and we wanted to keep him front and center. So, the insight tiles had to complement the avatar. We brainstormed a bunch of different ways, but we settled four of the simplest layout to test with users. First was stacking the tiles underneath the avatar on the z-axis. Second was putting the tiles in a column underneath the avatar. Users would have to swipe up to see the cards. Third was simply laying out the cards on the x-axis underneath the avatar. Finally, we tried a vertical layout side by side with the avatar.</div>
+      <div class="section-paragraph">After doing some quick usability testing with five users, we quickly realized that the horizontal tiles made the most sense. Not only did they present a metric one at a time, they also afforded the interaction most effectively. A user simply had to swipe back and forth to go from one tiles to the next. </div>
+
+        <div class="section-subheader"><div class=" version">Phase 3: Final Visual Design</div></div>
+  
+      <div class="section-paragraph">Once we had this information, we went ahead and laid the tiles out in the final UX. </div>
+
+       <div class="section-image ">
+        <%=image_tag('cardslayoutfinal.png', :class =>'center')%>
+      </div>
+
+        <div class="section-subheader"><div class=" version">Phase 4: how do you see historical and trends data via insight tiles?</div></div>
+      <div class="section-image ">
+        <%=image_tag('maxcards.png', :class =>'')%>
+      </div>
+      <div class="section-paragraph">Lastly, users still needed to be able to dive deeper into these metrics. When a user tapped on a card, we wanted the card to expand in order to give more information. However, laying out that information proved a bit more difficult than we had anticipated. Visualizing information in a useful way on a tiny phone is pretty hard. We tried four different methods. First, we simply expanded the insight tile and offered a metric breakdown. Second, there was the sectioned line graph which showed progress over time in a continuous manner. Third, was the stacked bar chart. This showed very detailed hour by hour discreet information. For example, for a particular hour, you can see how much slouch time you had and also how much good posture you had. Lastly was the simple bar chart.</div>
+       <div class="section-image">
+        <%=image_tag('maxcardsparts.png', :class =>'margintop-50')%>
+      </div>
+       <div class="section-paragraph">After presenting these to users, we found that we should draw on the most successful parts of two different cards. It would present the most meaningful and insightful flow of data.</div>
+   
+         <div class="section-image">
+          <%=image_tag('maxcardexplain.png', :class =>'margintop-50')%>
+        </div>
+          <div class="section-paragraph margintop-50">The expanded insight tile would include deeper information the further down you read the card. First, you’d see the glanceable insight tiles and your progress. Then we’d tell you how this insight tile broke down. For example, the posture score was calculated using a combination of good and bad polsture. Thirdly, if a user really wanted to get into the weeds, they could understand how the metrics break down hour by hour.</div>
+   
+      
+  <div class="section-subheader"><div class=" version">Phase 4: Final Visual Design</div></div>
+      <div class="section-image cards">
+        <%=image_tag('maxcardsfinal.png', :class =>'final')%>
+      </div>
+      <div class="section-paragraph">We translated this layout for each of the insight tiles. Of course, it wasn’t a perfect fit. For example, there is no way to break down stand ups. But our layout was easily adaptable. </div>
+     
+        
+       
+      
+  	
+
+  		<div class="section-subheader"><div class=" version">Final Phase - Putting all the pieces together</div></div>
+  		<div class="section-paragraph">Putting all of these different phases of the design process together, we ended with this. Let’s go ahead and watch this final rundown of the user experience.</div>
+
+  	 <div class="section-video">
+          <%= video_tag("insighttilescopy.mp4", controls: true, poster: 'insighttilesposter.png', muted:true) %>
+        </div>
+
+
+
+  	</div>
+
+	<div class="casestudy-section">
+  		<div class="section-header"><div class="number">5</div><br>Success Metrics</div>
+  		<div class="section-paragraph">We also wanted to tie this back into our initial goal of boosting Lumo Back sales. After releasing this updated, we saw sales spike. They nearly doubled. When talking to users, they were now more engaged and were presented with a wealth of information they had never seen before. 
+  		</div>
+  		  	
+
+  		<div class="section-image">
+  			<%=image_tag('lumobacksales.png', :class =>'height400')%>
+  		</div>
+
+
+
+  	</div>
+
+ 
+  		<div class="casestudy-section">
+  	
+
+  		<div class="section-button">
+  			<a href="/">Return to portfolio</a>
+  		</div>
+  		
+
+
+  	</div>
+
+
+
+
+
+
+
+  </div>

@@ -221,7 +221,9 @@ header {
 	#hero {
 		margin-top:250px;
 	}
-
+	.casestudy-header-back {
+		background:#7FC250 !important;
+	}
 
 	#casestudy-header {
 		
@@ -267,6 +269,11 @@ header {
 			position:relative; 
 		}
 
+		.back .project-name, .back .project-description, .back .product-name {
+			padding-left:0;
+			text-align:left;
+		}
+
 
 		.section-video {
 			width:80%;
@@ -277,6 +284,9 @@ header {
 			video {
 				width:300px;
 
+			}
+			img {
+				width:300px;
 			}
 		}
 
@@ -361,15 +371,54 @@ header {
 
 		}
 
+
 		.section-image {
 			width:80%;
 			margin-left:auto;
 			margin-right:auto;
+			text-align:center;
 			// @include BoxShadowHelper(1);
 			img {
 				width:100%;
 			}
+
+			img.width100 {
+				width:100%;
+			}
+
+			img.center {
+				width:auto;
+				margin-left:auto;
+				margin-right:auto;
+				max-height:600px;
+			}
+
+			img.margintop-50 {
+				margin-top:60px;
+			}
+
+			img.height400 {
+				height:400px;
+				width:auto;
+			}
+
+
 		}
+
+		.cards  {
+			margin-top:70px;
+
+			img {
+				
+				height:auto;
+				width:70%;
+			}
+			.final {
+				height:800px;
+				width:auto;
+			}
+		}
+
 
 		.section-video {
 			width:80%;
@@ -427,7 +476,7 @@ header {
 		}
 
 		.version {
-			width:30%;
+			width:40%;
 			// height:50%;
 			// line-height:40px;
 			// background:#1c7039;
@@ -606,6 +655,13 @@ header {
 
 	}
 
+	.panel70 {
+		width:68%;
+		padding:0;
+		margin:0;
+		display:inline-block;
+	}
+
 	.panel50 {
 		width:48%;
 		padding:0;
@@ -613,6 +669,10 @@ header {
 		display:inline-block;
 		text-align:center;
 		vertical-align:top;
+
+		.margintop-50 {
+			margin-top:100px;
+		}
 		.challenges {
 			text-align:left;
 			position:relative;
@@ -771,6 +831,25 @@ header {
 
 	@media screen 
 	and (max-width : 764px) {
+		.section-image {
+			width:100% !important;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+			// @include BoxShadowHelper(1);
+			img {
+				width:100% !important;
+				height:auto !important;
+			}
+
+			
+
+
+		}
+
+
+
+	
 		#mainframe {
 			.header1 {
 				font-size:30px;
@@ -868,6 +947,8 @@ header {
 
 				}
 
+
+
 				.section-quote {
 					width:90%;
 					.quote {
@@ -882,14 +963,19 @@ header {
 					margin-top:20px;
 				}
 				.project-name, .project-description, .product-name {
-					padding-left:10px;
-					padding-right:10px;
+					padding-left:10px !important;
+					padding-right:10px !important;
 				}
 
 				.project-name {
 					font-size:40px;
 				}
+				padding-bottom:20px;
 
+			}
+
+			.casestudy-section .version {
+				width:98%;
 			}
 
 
