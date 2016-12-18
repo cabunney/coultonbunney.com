@@ -18,4 +18,8 @@ class MainController < ApplicationController
 
 	end
 
+	def casestudy2
+
+	end
+
 end
