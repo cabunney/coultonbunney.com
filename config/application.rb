@@ -59,6 +59,7 @@ module CoultonbunneyCom
     # Add the videos path
     config.assets.paths << "#{Rails.root}/app/assets/videos"
 
+
     # Add the fonts path
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 

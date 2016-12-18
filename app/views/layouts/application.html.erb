@@ -3,7 +3,8 @@
 <head>
 	<title><%= full_title(yield(:title)) %></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<%= stylesheet_link_tag "application"%>
+	<%= stylesheet_link_tag "application-all", :media => "all" %>
+	<%= yield :view_specific_css %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
