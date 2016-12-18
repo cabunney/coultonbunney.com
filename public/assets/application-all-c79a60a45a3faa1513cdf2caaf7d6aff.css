@@ -1,0 +1,975 @@
+/**
+ * application-all.css
+ *
+
+
+ */
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+@font-face {
+  font-family: 'Calendas Plus';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/Calendas_Plus.otf);
+}
+
+/* line 37, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.light-black {
+  color: #aaa;
+}
+
+/* line 38, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.mid-black {
+  color: #666;
+}
+
+/* line 39, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.black {
+  color: #222;
+}
+
+/* line 40, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.white {
+  color: #fff;
+}
+
+/* line 41, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.blue {
+  color: #005391;
+}
+
+/* line 42, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.light-yellow {
+  color: #FEF1B5;
+}
+
+/* line 43, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.lumo-green {
+  color: #79C650;
+}
+
+/* line 45, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* line 53, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 61, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 66, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.desktop {
+  display: block;
+}
+
+/* line 69, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.mobile {
+  display: none;
+}
+
+/* line 73, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.casestudy {
+  background: white !important;
+}
+
+/* line 77, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+.see-case-study {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 82, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#me .blue {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+/* line 92, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#me .mid-black {
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  /* line 101, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 102, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  /* line 107, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 108, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  /* line 113, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 114, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  /* line 119, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 120, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  /* line 125, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 126, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 130, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#casestudy-header-bar {
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  background: transparent;
+}
+/* line 135, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#casestudy-header-bar .header-option {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+/* line 140, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#casestudy-header-bar a {
+  height: 40px;
+  width: 100px;
+  border-radius: 40px;
+  line-height: 40px;
+  text-align: center;
+  float: right;
+  border: 2px solid #ddd;
+  background: whitesmoke;
+  font-size: 14px;
+  text-decoration: none;
+  color: #666;
+  text-align: center;
+  font-family: "Lato";
+}
+
+/* line 162, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe {
+  font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  height: auto;
+  min-height: 100%;
+  background: #eee;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+/* line 176, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .header1 {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+/* line 183, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description-left {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.0em;
+}
+/* line 190, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description-right {
+  font-size: 20px;
+}
+/* line 194, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description-right span {
+  font-size: 14px;
+}
+/* line 197, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description-right > div a {
+  text-decoration: none;
+}
+/* line 199, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description-right > div a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 208, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .top {
+  vertical-align: top;
+  margin-top: 2px;
+}
+/* line 213, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .intro {
+  text-align: center;
+}
+/* line 219, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #hero {
+  margin-top: 250px;
+}
+/* line 222, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-header-back {
+  background: #7FC250 !important;
+}
+/* line 226, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header {
+  background: #7CB8D9;
+  position: relative;
+  max-height: 80%;
+  min-height: 80%;
+  height: 80%;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+/* line 236, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .product-name {
+  margin-top: 30%;
+}
+/* line 239, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .product-name, #mainframe #casestudy-header .project-description {
+  font-weight: 400;
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding-left: 150px;
+}
+/* line 248, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .project-description {
+  font-family: 'Calendas Plus', Georgia;
+  font-size: 17px;
+  z-index: 2;
+  position: relative;
+}
+/* line 257, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .project-name {
+  padding-left: 150px;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+/* line 270, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .back .project-name, #mainframe #casestudy-header .back .project-description, #mainframe #casestudy-header .back .product-name {
+  padding-left: 0;
+  text-align: left;
+}
+/* line 276, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .section-video {
+  width: 80%;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 282, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .section-video video {
+  width: 300px;
+}
+/* line 286, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #casestudy-header .section-video img {
+  width: 300px;
+}
+/* line 295, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section {
+  margin-top: 100px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 100px;
+}
+/* line 301, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-header {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+/* line 313, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-subheader {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #aaa;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+/* line 325, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-paragraph {
+  margin-top: 20px;
+  font-family: 'Calendas Plus', Georgia;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  color: #666;
+  line-height: 25px;
+}
+/* line 336, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .info {
+  text-align: center;
+  margin-top: -20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Lato";
+}
+/* line 344, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-quote {
+  margin: 50px;
+  text-align: center;
+  width: 70%;
+  line-height: 30px;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Calendas Plus', Georgia;
+  font-weight: 300;
+  color: #666;
+}
+/* line 355, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-quote .quote {
+  margin: 40px;
+  color: #bc2928;
+}
+/* line 360, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-quote .section-quote-separator {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  border-top: 1px solid #bc2928;
+}
+/* line 373, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-image {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 379, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-image img {
+  width: 100%;
+}
+/* line 383, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-image img.width100 {
+  width: 100%;
+}
+/* line 387, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-image img.center {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 600px;
+}
+/* line 394, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-image img.margintop-50 {
+  margin-top: 60px;
+}
+/* line 398, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-image img.height400 {
+  height: 400px;
+  width: auto;
+}
+/* line 406, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .cards {
+  margin-top: 70px;
+}
+/* line 409, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .cards img {
+  height: auto;
+  width: 70%;
+}
+/* line 414, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .cards .final {
+  height: 800px;
+  width: auto;
+}
+/* line 421, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-video {
+  width: 80%;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 427, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-video video {
+  width: 300px;
+}
+/* line 433, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-video-large video {
+  width: 100%;
+}
+/* line 437, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-button {
+  text-align: center;
+}
+/* line 439, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .section-button a {
+  text-align: center;
+  padding: 50px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Lato";
+}
+/* line 463, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .number {
+  width: 50px;
+  height: 50px;
+  background: #bc2928;
+  border-radius: 50px;
+  line-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+/* line 476, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .casestudy-section .version {
+  width: 40%;
+  background: transparent;
+  color: #aaa;
+  border-radius: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #ddd;
+  line-height: 40px;
+}
+/* line 493, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #me {
+  margin-bottom: 28px;
+  background: white;
+}
+/* line 497, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #me > div {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+}
+/* line 501, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #me > div a {
+  text-decoration: none;
+}
+/* line 506, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #me > div:first-child {
+  width: 40%;
+  text-align: right;
+}
+/* line 514, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .challenge-current {
+  -webkit-animation: fadein 4s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 4s;
+  /* Internet Explorer */
+  -o-animation: fadein 4s;
+  /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+/* line 522, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .challenge-completed {
+  -webkit-animation: fadein 5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 5s;
+  /* Internet Explorer */
+  -o-animation: fadein 5s;
+  /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+/* line 530, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .challenges {
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 533, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .challenges > div {
+  display: inline-block;
+}
+/* line 537, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .challenges > div:first-child {
+  width: 40%;
+  text-align: right;
+}
+/* line 542, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .challenges > div:nth-child(n+1) > div:nth-child(n) {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+/* line 550, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #lift {
+  background: white;
+  margin-top: 20%;
+  padding-bottom: 100px;
+}
+/* line 557, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #lift .sensor-size {
+  width: 300px;
+  position: relative;
+  top: -30px;
+  left: -150px;
+}
+/* line 565, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #back {
+  background: #eee;
+  padding-bottom: 100px;
+}
+/* line 570, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #chalk {
+  padding-bottom: 150px;
+  background: white;
+}
+/* line 573, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #chalk .panel-title {
+  padding-bottom: 60px;
+}
+/* line 578, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #about {
+  padding-bottom: 50px;
+  background: white;
+  border-top: 5px solid #FEF1B5;
+}
+/* line 584, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #about .image {
+  height: auto !important;
+}
+/* line 587, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #about .panel-title {
+  font-size: 32px;
+  text-align: left;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0;
+}
+/* line 596, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe #about .description {
+  margin-top: 10px;
+  text-align: justify;
+}
+/* line 603, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 {
+  width: 33%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 610, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .challenges {
+  text-align: left;
+  position: relative;
+  top: -100px;
+}
+/* line 615, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .challenges > div {
+  margin-left: 70px !important;
+}
+/* line 618, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .challenges .description-left {
+  text-align: left;
+  font-size: 40px;
+  text-transform: none;
+  margin-left: 0;
+  font-weight: 100;
+  width: 100%;
+}
+/* line 627, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .challenges .description-right div {
+  margin-left: 0 !important;
+}
+/* line 631, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .image {
+  height: 600px;
+}
+/* line 635, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 img {
+  max-height: 100%;
+  vertical-align: bottom;
+}
+/* line 640, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .lb {
+  width: 100%;
+  height: auto;
+}
+/* line 647, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel30 .face {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+/* line 656, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel70 {
+  width: 68%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+/* line 663, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 {
+  width: 48%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 671, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .margintop-50 {
+  margin-top: 100px;
+}
+/* line 674, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .challenges {
+  text-align: left;
+  position: relative;
+  top: -100px;
+}
+/* line 679, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .challenges > div {
+  margin-left: 70px !important;
+}
+/* line 682, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .challenges .description-left {
+  text-align: left;
+  font-size: 40px;
+  text-transform: none;
+  margin-left: 0;
+  font-weight: 100;
+  width: 100%;
+}
+/* line 691, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .challenges .description-right div {
+  margin-left: 0 !important;
+}
+/* line 695, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .image {
+  height: 400px;
+}
+/* line 699, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 img {
+  max-height: 100%;
+  vertical-align: bottom;
+}
+/* line 704, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .desktop-chalk {
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+}
+/* line 712, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel50 .section-paragraph {
+  width: 70%;
+  text-align: left;
+}
+/* line 719, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 {
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 726, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .challenges {
+  text-align: left;
+  position: relative;
+  top: -100px;
+}
+/* line 731, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .challenges > div {
+  margin-left: 70px !important;
+}
+/* line 734, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .challenges .description-left {
+  text-align: left;
+  font-size: 40px;
+  text-transform: none;
+  margin-left: 0;
+  font-weight: 100;
+  width: 100%;
+}
+/* line 743, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .challenges .description-right div {
+  margin-left: 0 !important;
+}
+/* line 747, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .image {
+  height: 600px;
+}
+/* line 751, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 img {
+  max-height: 100%;
+  vertical-align: bottom;
+}
+/* line 756, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .lb {
+  width: 100%;
+  max-height: none;
+  height: auto;
+  margin-top: -300px;
+}
+/* line 763, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel60 .face {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+/* line 773, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel-title {
+  text-align: center;
+  padding: 30px;
+  vertical-align: top;
+}
+/* line 778, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel-title > div:first-child span:first-child {
+  margin-right: 10px;
+}
+/* line 782, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .panel-title > div:nth-child(2) {
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+/* line 791, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description {
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: justify;
+  width: 85%;
+  margin-left: 10%;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 792, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+#mainframe .description .title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 940px) {
+  /* line 813, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #me > div:first-child {
+    width: auto;
+    text-align: left;
+  }
+  /* line 819, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #me > div {
+    margin-left: 10px;
+    display: block;
+  }
+}
+@media screen and (max-width: 764px) {
+  /* line 832, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  .section-image {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  /* line 838, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  .section-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* line 852, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .header1 {
+    font-size: 30px;
+  }
+  /* line 855, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .header1 > div:first-child span {
+    display: block;
+  }
+  /* line 860, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #hero {
+    margin-top: 200px;
+  }
+  /* line 864, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .challenges > div:first-child {
+    width: auto;
+    text-align: left;
+  }
+  /* line 870, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .challenges > div {
+    margin-left: 10px;
+  }
+  /* line 873, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .challenges > div:nth-child(n+1) > div:nth-child(n) {
+    margin-left: 0;
+  }
+  /* line 877, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .challenges .description-right {
+    font-size: 15px;
+  }
+  /* line 883, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .panel30 {
+    width: 100%;
+  }
+  /* line 886, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .panel30 .challenges {
+    top: 10px;
+    text-align: center;
+  }
+  /* line 889, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .panel30 .challenges > div {
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  /* line 896, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .panel50 {
+    width: 100%;
+  }
+  /* line 900, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .panel60 {
+    width: 100%;
+  }
+  /* line 904, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #lift .panel30:nth-child(2) {
+    margin-top: -400px;
+    z-index: 0;
+    overflow: hidden;
+  }
+  /* line 912, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #back .panel30:nth-child(2) {
+    margin-top: -220px;
+  }
+  /* line 914, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #back .panel30:nth-child(2) .image {
+    height: 450px;
+  }
+  /* line 917, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #back .panel30:nth-child(2) .lb {
+    margin-top: 0;
+    max-height: 100%;
+    width: auto;
+  }
+  /* line 928, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #chalk .panel50 {
+    margin-top: 50px;
+  }
+  /* line 931, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #chalk .image {
+    height: 250px;
+  }
+  /* line 937, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #about .panel-title {
+    font-size: 24px;
+  }
+  /* line 942, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .casestudy-section .section-paragraph {
+    width: 90%;
+  }
+  /* line 950, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .casestudy-section .section-quote {
+    width: 90%;
+  }
+  /* line 952, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .casestudy-section .section-quote .quote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 959, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #casestudy-header {
+    padding-bottom: 20px;
+  }
+  /* line 960, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #casestudy-header .product-name {
+    margin-top: 20px;
+  }
+  /* line 963, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #casestudy-header .project-name, #mainframe #casestudy-header .project-description, #mainframe #casestudy-header .product-name {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  /* line 968, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe #casestudy-header .project-name {
+    font-size: 40px;
+  }
+  /* line 975, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  #mainframe .casestudy-section .version {
+    width: 98%;
+  }
+
+  /* line 983, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  .desktop {
+    display: none;
+  }
+
+  /* line 986, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/All/main.css.scss */
+  .mobile {
+    display: block;
+  }
+}

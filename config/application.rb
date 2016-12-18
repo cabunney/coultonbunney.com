@@ -65,5 +65,8 @@ module CoultonbunneyCom
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+      config.assets.precompile += %w( application-all.css application-casestudy.css)
+
   end
 end
