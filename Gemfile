@@ -23,8 +23,9 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 group :assets do
-  gem 'basscss-rails'
+  # gem 'basscss-rails'
   gem 'sass-rails'
+  # gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
   gem 'coffee-rails'
   gem 'sprockets-rails', :require => 'sprockets/railtie'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes

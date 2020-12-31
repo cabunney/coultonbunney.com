@@ -11,10 +11,10 @@ CoultonbunneyCom::Application.routes.draw do
 
     match '/portfolio' => 'main#portfolio', via: 'get'
     match '/about' => 'main#about',  via: 'get'
-        match '/old' => 'main#portfolio_old',  via: 'get'
-        match '/10-sec-experience' => 'main#casestudy1',  via: 'get'
-        match '/insight-tiles' => 'main#casestudy2',  via: 'get'
-
+    match '/old' => 'main#portfolio_old',  via: 'get'
+    match '/10-sec-experience' => 'main#casestudy1',  via: 'get'
+    match '/insight-tiles' => 'main#casestudy2',  via: 'get'
+    match '/casestudy3' => 'main#casestudy3',  via: 'get'
     match '/' => 'main#portfolio',  via: 'get'
 
     get 'main/download'
