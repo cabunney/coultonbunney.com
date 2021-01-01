@@ -7,11 +7,11 @@ class MainController < ApplicationController
 	end
 
 	def download
-		send_file(
-			"#{Rails.root}/public/coultonbunney_resume_oct2014.pdf",
-			filename: "coultonbunney_resume.pdf",
-			type: "application/pdf"
-			)
+		# send_file(
+		# 	"#{Rails.root}/public/coultonbunney_resume_oct2014.pdf",
+		# 	filename: "coultonbunney_resume.pdf",
+		# 	type: "application/pdf"
+		# 	)
 	end
 
 	def casestudy1 
@@ -21,5 +21,6 @@ class MainController < ApplicationController
 	def casestudy2
 
 	end
+
 
 end

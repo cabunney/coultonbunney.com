@@ -1,4 +1,9 @@
 CoultonbunneyCom::Application.routes.draw do
+  root :to => 'main#portfolio'
+
+
+  mount Lockup::Engine, at: '/lockup'
+
   # get "main/portfolio"
 
   # get "main/about"
@@ -7,17 +12,16 @@ CoultonbunneyCom::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
-    root :to => 'main#portfolio'
-
     match '/portfolio' => 'main#portfolio', via: 'get'
     match '/about' => 'main#about',  via: 'get'
     match '/old' => 'main#portfolio_old',  via: 'get'
     match '/10-sec-experience' => 'main#casestudy1',  via: 'get'
     match '/insight-tiles' => 'main#casestudy2',  via: 'get'
-    match '/casestudy3' => 'main#casestudy3',  via: 'get'
+    match '/casestudy3' => 'case_study#casestudy3',  via: 'get'
     match '/' => 'main#portfolio',  via: 'get'
 
     get 'main/download'
+
 
 
   # Keep in mind you can assign values other than :controller and :action

@@ -60,6 +60,8 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     kgio (2.11.0)
+    lockup (1.6.1)
+      rails (>= 3, < 7.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -147,6 +149,7 @@ DEPENDENCIES
   coffee-rails
   heroku-deflater
   jquery-rails
+  lockup
   pg
   rails (= 5.0.0.1)
   rails_12factor (= 0.0.2)

@@ -11,6 +11,12 @@ end
 
 module CoultonbunneyCom
   class Application < Rails::Application
+
+    ENV['LOCKUP_CODEWORD'] = 'test'
+    ENV['COOKIE_LIFETIME_IN_WEEKS'] = '0'
+    # ENV['LOCKUP_HINT'] = 'Something that you do not tell everyone.'
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -66,7 +72,7 @@ module CoultonbunneyCom
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf)
 
-      config.assets.precompile += %w( application-all.css application-casestudy.css)
+    config.assets.precompile += %w( application-all.css application-casestudy.css unlock.css)
 
   end
 end

@@ -35,6 +35,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+# Password protect pages
+gem 'lockup'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
