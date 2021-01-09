@@ -13,7 +13,7 @@ module CoultonbunneyCom
   class Application < Rails::Application
 
     ENV['LOCKUP_CODEWORD'] = 'test'
-    ENV['COOKIE_LIFETIME_IN_WEEKS'] = '1'
+    ENV['COOKIE_LIFETIME_IN_WEEKS'] = '0'
     # ENV['LOCKUP_HINT'] = 'Something that you do not tell everyone.'
 
 
