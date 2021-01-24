@@ -20,7 +20,18 @@ body {
 	>div {
 		max-width:900px; 
 	}
+
+	.back a {
+		color:$text-white;
+
+	&:hover {
+	 	color:$text-white-secondary;
+	}
 }
+
+	
+}
+
 
 #conclusion {
 	background:$blue;
@@ -92,3 +103,5 @@ h2 {
 
 	}
 }
+
+
