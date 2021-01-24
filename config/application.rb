@@ -12,7 +12,7 @@ end
 module CoultonbunneyCom
   class Application < Rails::Application
 
-    ENV['LOCKUP_CODEWORD'] = 'circle-square'
+    ENV['LOCKUP_CODEWORD'] = 'sequoia'
     ENV['COOKIE_LIFETIME_IN_WEEKS'] = '0.1'
     # ENV['LOCKUP_HINT'] = 'Something that you do not tell everyone.'
 
