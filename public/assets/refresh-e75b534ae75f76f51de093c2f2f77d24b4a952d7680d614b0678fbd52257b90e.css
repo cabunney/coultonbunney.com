@@ -1,0 +1,118 @@
+/* line 2, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/all/_colors.css.scss */
+.bg-green {
+  background: #1A936F;
+}
+
+/* line 5, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/all/_colors.css.scss */
+.text-white {
+  color: #fff;
+}
+
+/* line 6, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/all/_colors.css.scss */
+.text-green {
+  color: #1A936F;
+}
+
+/* line 4, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+html {
+  background-color: #3560C6;
+}
+
+/* line 8, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f7;
+}
+
+/* line 14, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#casestudy {
+  max-width: 900px;
+}
+
+/* line 18, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#refresh-header {
+  background: #3560C6;
+}
+/* line 20, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#refresh-header > div {
+  max-width: 900px;
+}
+
+/* line 25, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#conclusion {
+  background: #3560C6;
+  color: rgba(255, 255, 255, 0.87);
+}
+/* line 28, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#conclusion > div {
+  max-width: 900px;
+}
+/* line 33, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#conclusion p, #conclusion a {
+  color: rgba(255, 255, 255, 0.87);
+}
+/* line 37, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#conclusion a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 42, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#flatironlogo {
+  width: 150px;
+}
+
+/* line 46, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+hr {
+  height: 2px;
+  border: none;
+  background-color: #3560C6;
+}
+
+/* line 52, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+.headline {
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.25;
+}
+
+/* line 58, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 64, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+h1 {
+  font-size: 2.5em;
+}
+
+/* line 68, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+h2 {
+  font-size: 1.75em;
+}
+
+/* line 72, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+.nav-refresh {
+  max-height: 800px;
+}
+
+/* line 76, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+.b1 {
+  border: solid 1px #e0e0e0;
+}
+
+/* line 80, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#outcomes-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+/* line 86, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#outcomes-table td {
+  border-top: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+/* line 89, /Users/cabunney/code/coultonbunney.com/app/assets/stylesheets/refresh.css.scss */
+#outcomes-table td.goal {
+  width: 40%;
+}

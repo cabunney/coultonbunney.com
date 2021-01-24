@@ -17,7 +17,7 @@ CoultonbunneyCom::Application.routes.draw do
     match '/old' => 'main#portfolio_old',  via: 'get'
     match '/10-sec-experience' => 'main#casestudy1',  via: 'get'
     match '/insight-tiles' => 'main#casestudy2',  via: 'get'
-    match '/casestudy3' => 'case_study#casestudy3',  via: 'get'
+    match '/oncoemr-refresh' => 'case_study#casestudy3',  via: 'get'
     match '/' => 'main#portfolio',  via: 'get'
 
     get 'main/download'

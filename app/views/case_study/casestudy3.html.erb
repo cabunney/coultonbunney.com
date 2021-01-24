@@ -1,11 +1,292 @@
-<div id="portfolio" class="p2 mx-auto">
-	<div class="flex flex-wrap content-stretch mxn1" style="min-height:100px;">
-		<div class="sm-col sm-col-12 px1 mb2">
-			<div>
-				<div class="inline-block">
-					<h1 class="left-align mt3">Case study 3</h1>				
+<% content_for :view_specific_css do %>
+<%= stylesheet_link_tag "refresh" %>
+<% end %>
+
+<div id="refresh-header" class="p4">
+	<div class="mx-auto">
+		<%= image_tag('flatironlogo.png', :id=>"flatironlogo" )%>
+		<h1 class="headline">Redesigning an electronic health record</h1>	
+	</div>
+</div>
+
+<div id="casestudy" class="py3 px4 clearfix mx-auto block">
+	<div class="block">
+		<h1>Background</h1>	
+		<p class="h3 mt2">Flatiron Health's mission is to improve lives by learning from the experience of every cancer patient. The company had a vision of leveraging data that is collected every day in electronic health records during routine office visits to conduct first of its kind medical research to generate what is now referred to as real-world evidence. To do this, Flatiron needed access to a diverse and expansive set of data from medical records. As you can imagine in an industry ruled by a small number of companies who have a vested interest in keeping their data siloed, this is no small feat.</p>
+
+		<p class="h3 mt3">Flatiron’s co-founders decided to acquire a company called Altos Solutions, primarily for their oncology specific electronic health record, OncoEMR. OncoEMR had been in the market since 2006 and already had a healthy customer base of small one to five doctor oncology practices across the United States.</p> 
+
+		<p class="h3 mt3">My task was to figure out what changes needed to be made to the application to help enable the expansion to larger, more sophisticated practices.</p>
+
+		<div>
+			<%= image_tag('visitlist.png', :class=>"center mt3 mb0" )%>
+			<p class="center h4 mt0"><strong>OncoEMR visit list:</strong> a daily work list of patient appointments</p>
+		</div>
+	</div>
+
+	<div class="block mt4">
+		<h1>Discovery</h1>
+
+		<p class="h3 mt2">To understand how to evolve the product, I started by trying to understand its history. How did it become the product we see today? I conducted internal interviews with seven Altos employees, including the lead nurse who served as product manager, the head of engineering, and the head of sales. Following the internal research, I traveled to three practices, one in Florida, Michigan, and Pennsylvania each, to shadow users during their normal daily workflows.</p>
+
+		<h2 class="mt3">Internal findings</h2>
+
+		<ul class="">
+			<li class="h3"><strong>User-led features:</strong> Many OE features were built directly in response to an ask or support ticket from a user without an eye towards a larger product vision. </li>
+			<li class="h3 mt2"><strong>Tacked on design approach:</strong> When building new features, the engineering team put them into the UI where pixels were available rather than refactoring the design or code to accommodate them holistically. New features were built from scratch rather than leveraging already existing code or UI patterns. This approach led to quite a bit of technical debt as well as design debt. We confirmed this with the engineering leads from Flatiron.</li>
+			<li class="h3 mt2"><strong>User training first:</strong> I learned that Altos often took a training-first approach rather than investing in a design that was highly learnable. Training was cheaper than investing significantly in activities like evaluative research.</li>
+		</ul>
+
+		<h2 class="mt3">External findings</h2>
+
+		<ul class="">
+			<li class="h3"><strong>Memorized workflows:</strong> The unintuitive layout of the application led users to frequently memorize the exact locations of buttons and series of clicks to get their routine work done.</li>
+			<li class="h3 mt2"><strong>Context switching:</strong> In a clinic, it’s not uncommon for clinicians to context switch constantly. I witnessed clinicians frequently forget which patient’s chart they had open, which had the potential to lead to serious clinical errors.</li>
+			<li class="h3 mt2"><strong>Hard to parse information:</strong> Providers found it difficult to parse the information that was on the screen. I frequently saw them use their fingers to trace across large tables of data, much like a person traces sentences in a book when first learning to read.</li>
+		</ul>
+
+		<p class="h3 mt3">I walked away with the impression that OncoEMR was a house of cards. Built in direct response to discrete user needs but without regard for a holistic user experience left a product that could solve a lot of problems but only for those who knew how to use it. Even worse, significant technical debt meant it would be difficult to change. </p>
+
+	</div>
+
+	<div class="block mt4">
+		<h1>Goals</h1>
+
+		<p class="h3 mt2">Combining the internal and external findings, we came to believe that expansion to more clinics, especially larger ones, would be hindered by larger than expected training overhead and an inability to quickly build additional features, both from a code and user experience perspective. However, radical changes could alienate our current user base because it would quickly break their memorized workflows.</p>
+
+		<p class="h3 mt2">With this in mind, we outlined our desired outcomes for what came to be known as the OncoEMR Refresh.</p>
+
+		<ul class="">
+			<li class="h3">Improve usability by fixing a handful of small, but important issues</li>
+			<li class="h3 mt2">Develop and apply a new design language that emphasizes consistency in order to increase accessibility</li>
+			<li class="h3 mt2">Lay the groundwork for future improvements</li>
+			<li class="h3">Nearly all users willfully adopt changes</li>
+		</ul>
+	</div>
+
+	<div class="block mt4">
+		<h1>Usability audit</h1>
+		<p class="h3 mt2">Along with the Director of Product Management, a team of five engineers, and a few internal subject matter experts, we conducted a usability audit. From this audit, we identified several glaring issues and fixed them to simplify pages in the application.</p>
+
+			<!-- <div class="clearfix mt3 mx-auto">
+				<div class="col md-col-9 lg-col-9">
+					<%= image_tag('visit_list_annotated.png', :class=>"" )%>
 				</div>
+				<div class="col md-col-3 lg-col-3">
+					<ol class="">
+						<li class="h4">Inconsistent spacing and lack of hierarchy</li>
+						<li class="h4 mt2">Misaligned headers and lack of proper padding</li>
+						<li class="h4 mt2">Rarely used buttons</li>
+						<li class="h4 mt2">Inconsistent use of button types</li>
+					</ol>
+				</div>
+			</div> -->
+
+		<div class="clearfix mt3 mx-auto">
+			<div class="col md-col-9 lg-col-9">
+				<%= image_tag('tx_plan_annotated.png', :class=>"" )%>
+				<p class="center h4 mt0"><strong>OncoEMR treatment plan:</strong> a 10,000 foot timeline of a patient’s care over time</p>
+			</div>
+			<div class="col md-col-3 lg-col-3">
+				<ol class="">
+					<li class="h4">Inconsistent spacing and lack of hierarchy</li>
+					<li class="h4 mt2">Inconsistently aligned rows and columns</li>
+					<li class="h4 mt2">Duplicative or unused buttons</li>
+					<li class="h4 mt2">Inconsistent use of button types</li>
+				</ol>
+			</div>
+		</div>
+		<div>
+			<%= image_tag('txplan_refresh_0.5.png', :class=>"center mt3 mb0" )%>
+			<p class="center h4 mt0"><strong>Improved</strong> treatment plan with simplified menu bar and consistent table alignment</p>
+		</div>
+	</div>
+
+	<div class="block mt4">
+		<h1>Redesigning navigation structure</h1>
+		<p class="h3 mt2">
+			Frequently in our research, we saw users jump between pages via the left navigation bar in what seemed like random order, which led to confusion and several instances of navigating to the incorrect page. We dug into why.
+		</p>
+		<ul class="">
+			<li class="h3">Pages not grouped by user nor function</li>
+			<li class="h3 mt2">Clinical pages were not ordered according to the flow of a typical appointment</li>
+			<li class="h3 mt2">The inbox, where a provider would find urgent information, was buried in the last section alongside user customization pages that did not belong</li>
+		</ul>
+		<div class="clearfix mt3">
+			<div class="col md-col-6 lg-col-6">
+				<%= image_tag('nav_annotated.png', :class=>"center mt3 mb0" )%>
+				<p class="center h4 mt0"><strong>Original</strong> navigation bar, annotated with hierarchy issues</p>
+			</div>
+			<div class="center col md-col-6 lg-col-6">
+				<%= image_tag('nav_refresh.png', :class=>"nav-refresh mt3 mb0 mx-auto" )%>
+				<p class="center h4 mt0"><strong>Improved</strong> navigation bar, with better grouping and ordering</p>
 			</div>
 		</div>
 	</div>
+
+	<div class="block mt4">
+		<h1>A new patient header</h1>
+		<p class="h3 mt2">
+			On a typical day, a provider sees 15-30 patients. Shadowing physicians revealed that clinicians are interrupted continuously with questions that require reviewing a new chart. Analytics revealed that a doctor might switch between up to 90 different patient charts in a day. For safety reasons, OncoEMR could only have a single chart open at a time, and the system would stay in sync across multiple browser tabs.
+		</p>
+
+		<p class="h3 mt2">
+			Unfortunately, I witnessed clinicians frequently forget or get confused about which patient’s chart they had open. The design of the patient header, which showed whose chart was currently open, made it quite difficult to quickly situate yourself. Entering information into the wrong chart had the potential to cause serious clinical errors. 
+		</p>
+		<div class="">
+			<%= image_tag('header_annotated.png', :class=>"center mt3 mb0" )%>
+			<p class="center h4 mt1"><strong>Original</strong> patient header, annotated with layout issues</p>
+		</div>
+		<div class="mt3">
+			<%= image_tag('header_refresh.png', :class=>"nav-refresh mt3 mb0 mx-auto" )%>
+			<p class="center h4 mt1"><strong>Improved</strong> patient header, with photo, status badges, and delineation between patient and user info</p>
+		</div>
+	</div>
+
+	<div class="block mt4">
+		<h1>A fresh coat of paint</h1>
+		<p class="h3 mt2">
+			Before doing our final round of validation user testing, we wanted to do a pass on visual design of the application to bring it in line with the larger Flatiron brand. Instead of teal and orange, we updated the application's color palette to blue, white, and black. Instead of Verdana, we updated the font to more system safe fonts Helvetica on Mac, and Arial on Windows.
+		</p>
+
+		<div class="mt3">
+			<%= image_tag('document_refresh.png', :class=>"center b1 mt3 mb0" )%>
+			<p class="center h4 mt1"><strong>Documents list</strong>, with brand-aligned color palette</p>
+		</div>
+
+	</div>
+
+	<div class="block mt4">
+		<h1>Validation</h1>
+		<p class="h3 mt2">
+			Finally, with streamlined menu bars, simplified page layouts, a redesigned nav bar, a logically laid out patient header, and a new coat of paint added, I headed out into the field one last time to run a series of validation tests. Running research in three different practices, I asked users to complete a series of tasks that I developed with our in-house subject matter experts in the newly refreshed interface. 
+		</p>
+
+		<p class="h3 mt2">
+			Our methodical approach to the refresh paid off. Because we retained most workflows and instead focused on usability issues and a visual overhaul, nearly all tasks were completed with little to no stumbles.
+		</p>
+
+		<p class="h3 mt2">
+			As with all testing, though, all was not perfect. We uncovered a few issues that we fixed before launch. 
+		</p>
+
+		<ul class="">
+			<li class="h3"><strong>Reduced whitespace in tables:</strong> Too much whitespace in tables left many users feeling there would be too much additional scrolling</li>
+			<li class="h3 mt2"><strong>Darkened horizontal rules:</strong> Low contrast monitors, pretty typical in a clinic, meant increasing contrast on horizontal rules would make table data much easier to parse</li>
+			<li class="h3 mt2"><strong>Added dashed vertical rules into tables:</strong> Typically frowned upon, users missed the vertical rules in tables that allowed them to more easily scan down long columns of data</li>
+		</ul>
+
+		<div class="mt3">
+			<%= image_tag('visit_list_final.png', :class=>"center b1 mt3 mb0" )%>
+			<p class="center h4 mt1"><strong>Final visit list</strong> with tightened whitespace, darker horizontal rules, dashed vertical rules
+			</p>
+		</div>
+
+	</div>
+
+	<div class="block mt4">
+		<h1>Release</h1>
+		<p class="h3 mt2">
+			When it came time to release the Refresh, we decided to allow users to opt-in at first. We displayed a modal that explained what the Refresh was, and asked users if they’d like to toggle it on. If they wanted they could toggle it back off at any point.  
+		</p>
+
+		<p class="h3 mt2">
+			Roughly 60% of users toggled the refresh on, and we saw just 10% of users toggle it back off. We asked for feedback and overwhelmingly the reason for toggling off was that the new color palette was too bright. So, we introduced a partial dark mode that users could easily enable to dial down the bright colors.
+		</p>
+
+
+		<div class="mt3">
+			<%= image_tag('tx_plan_final_dark.png', :class=>"center b1 mt3 mb0" )%>
+			<p class="center h4 mt1">Treatment plan with <strong>dark mode</strong> enabled</p>
+		</div>
+
+		<p class="h3 mt3">
+			Over the course of the next several weeks, we re-triggered the Refresh modal for users still in OncoEMR classic, no more than once per week and only first thing in the morning to ensure it did not trigger during a patient’s appointment. Within 2 months, we were up to 70% willful adoption.
+		</p>
+		<p class="h3 mt2">
+			Eventually, we moved to an opt-out model, where the remaining 30% of users were automatically opted in and could toggle off, and that finally did the trick, with only a few remaining stragglers. Within three months of starting rollout, nearly everyone was using the Refresh daily. 
+		</p>
+
+	</div>
+
+	<div class="block mt4 mx-auto">
+		<h1>Outcomes</h1>
+		<table id="outcomes-table">
+			<thead>
+				<tr>
+					<th colspan='2' class="h3 py2 px1">Goal</th>
+					<th class="h3 py2 px1">Outcome</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="h3 py2 px1 goal">Improve usability by fixing a handful of small, but important issues</td>
+					<td class="h3 py2 px1 pr2">&rightarrow;</td>
+					<td class="h3 py2 px1">Completed usability audit and validated changes with real users</td>
+				</tr>
+				<tr>
+					<td class="h3 py2 px1 goal">Develop and apply a new design language that emphasizes consistency in order to increase accessibility</td>
+					<td class="h3 py2 px1 pr2">&rightarrow;</td>
+					<td class="h3 py2 px1">As part of the Refresh, I partnered with one of our engineers to develop a new design system that housed all newly introduced colors, typography, and components. It allows us to add new features in a consistent way, improving the overall learnability of the system over time. This design system came to be known as <strong>Atrium</strong> and is now used daily across nearly all of Flatiron’s products.
+
+					
+					</td>
+				</tr>
+				<tr>
+					<td class="h3 py2 px1 goal">Lay the groundwork for future improvements</td>
+					<td class="h3 py2 px1 pr2">&rightarrow;</td>
+					<td class="h3 py2 px1">During development, we decided to rebuild the navigation bar and patient header from scratch using React rather than .NET and JQuery. Not only did this make refactoring much easier, it also attracted engineers from across the company to join the project. 
+					</td>
+				</tr>
+
+				<tr>
+					<td class="h3 py2 px1 goal">Nearly all users willfully adopt changes</td>
+					<td class="h3 py2 px1 pr2">&rightarrow;</td>
+					<td class="h3 py2 px1">~70% of users chose to adopt the refreshed interface changes
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+<div id="conclusion" class="pb3 px4 clearfix block">
+	<div class="block mt4 mx-auto">
+		<h1>Lessons</h1>
+		<p class="h2 mt2 mb1 bold">
+			Think <a href="https://en.wikipedia.org/wiki/Ship_of_Theseus">Ship of Theseus</a>, not <a href="https://www.nytimes.com/2019/04/24/nyregion/old-penn-station-pictures-new-york.html">Penn Station</a> when it comes to redesigns
+		</p>
+		<p class="h3 mt0">
+			Looking at OncoEMR for the first time naturally inspires bewilderment amongst designers. I was no different. When I joined Flatiron, I wanted to tear the thing down and build a modern system. But there are times when demolition and rebuilding, a seemingly progressive idea at first, can lead to disastrous results. See: Penn Station. An early, methodical approach to user research bore that out. Rebuilding would have been incredibly disruptive to users and undermined the very reason Flatiron acquired the application in the first place. Instead, this project showed me that a Ship of Theseus approach whereby we laid a path to rebuild the system, delivering small but important improvements, is sometimes the much more user friendly, and business savvy approach.
+		</p>
+
+		<p class="h2 mt3 mb1">
+			It takes a village
+		</p>
+		<p class="h3 mt0">
+			If it were not for the in-house subject matter experts, original Altos employees, Flatiron engineers, and the clinics that allowed me to shadow for days, this project would not have been a success. To do good work in healthcare, it takes a village. As I grew the product design org, it takes a village became one of the core values of the product design organization at Flatiron.
+
+		</p>
+
+		<p class="h2 mt3 bold mb1">
+			Information density matters more than you think to expert users
+		</p>
+		<p class="h3 bold mt0">
+			And lastly, a small but important lesson that I kept relearning during my time at Flatiron; doctors always want just a little bit more on screen.
+
+		</p>
+
+		
+	</div>
+
+	<div class="block mx-auto mt4">
+		<h1>Next steps</h1>
+		<p class="h3 mt0">
+			The OncoEMR Refresh was just the start. Now that the system’s design baseline had been reset and we had much sharper tools in the toolbox to make changes (Atrium design system, React), the next step was to get to work on improving the core workflows clinicians use every day. 
+		</p>
+
+
+	</div>
+
 </div>

@@ -12,7 +12,7 @@ end
 module CoultonbunneyCom
   class Application < Rails::Application
 
-    ENV['LOCKUP_CODEWORD'] = 'test'
+    ENV['LOCKUP_CODEWORD'] = 'circle-square'
     ENV['COOKIE_LIFETIME_IN_WEEKS'] = '0.1'
     # ENV['LOCKUP_HINT'] = 'Something that you do not tell everyone.'
 
@@ -72,7 +72,7 @@ module CoultonbunneyCom
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf)
 
-    config.assets.precompile += %w( application-all.css application-casestudy.css unlock.css)
+    config.assets.precompile += %w( application-all.css application-casestudy.css unlock.css refresh.css)
 
   end
 end
