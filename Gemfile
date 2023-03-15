@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
-ruby '2.6.5'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.1'
-gem "activerecord", ">= 5.2.8.15"
+gem 'rails'
+gem "activerecord"
+gem 'webrick'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 
 
 # Gems used only for assets and not required
