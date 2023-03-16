@@ -4,6 +4,7 @@ ruby '3.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 gem "activerecord"
+gem 'webrick'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,7 +15,6 @@ gem "activerecord"
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
-  gem 'webricks'
 end
 
 group :production do
