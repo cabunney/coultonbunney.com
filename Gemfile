@@ -1,27 +1,27 @@
 source 'https://rubygems.org'
-ruby '2.6.5'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.1'
+gem 'rails'
 gem "activerecord"
+gem 'webrick'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3'
 end
 
 group :production do
   gem 'heroku-deflater'
-  gem 'pg'
-  gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor'
 end
+
 group :assets do
   # gem 'basscss-rails'
   gem 'sass-rails'
