@@ -1,12 +1,22 @@
 // Colors
 $green:#1A936F !default;
+$green-hover: #00603C;
 $black:#000 !default;
 $white:#fff !default;
+$red:#E53E3E;
+$blue:#3560C6;
+
 
 $text-black:rgba(0,0,0,0.87);
 $text-black-secondary:rgba(0,0,0,0.54);
 $text-black-disabled:rgba(0,0,0,0.26);
 
-$text-white:rgba(255,255,255,1);
+$text-white:rgba(255,255,255,0.87);
 $text-white-secondary:rgba(255,255,255,0.70);
 $text-white-disabled:rgba(255,255,255,0.50);
+
+
+// $html-base-size:62.5%;
+// $base-font-size:2rem;
+// $h1-size:3.2rem;
+// $h2-size:2.4rem;

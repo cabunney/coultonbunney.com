@@ -1,30 +1,31 @@
 source 'https://rubygems.org'
-ruby '2.6.5'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.1'
+gem 'rails'
 gem "activerecord"
+gem 'webrick'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3'
 end
 
 group :production do
   gem 'heroku-deflater'
-  gem 'pg'
-  gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor'
 end
+
 group :assets do
-  gem 'basscss-rails'
+  # gem 'basscss-rails'
   gem 'sass-rails'
+  # gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
   gem 'coffee-rails'
   gem 'sprockets-rails', :require => 'sprockets/railtie'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -34,6 +35,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+# Password protect pages
+gem 'lockup'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

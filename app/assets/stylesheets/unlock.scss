@@ -1,0 +1,27 @@
+/**
+ * unlock.css
+ 
+ */
+
+ @import 'all/variables.scss';
+
+
+html,body,#unlock,#unlock>div {
+	min-height:100%;
+	height:100%;
+	max-width:100%;
+	background:#f4f4f7;
+}
+
+ .input {
+ 	padding: 12px 12px; 	
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.6; /* Firefox */
+}
+
+.tryagain {
+	color:$red;
+}
+
