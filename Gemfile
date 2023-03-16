@@ -27,7 +27,7 @@ group :assets do
   gem 'sass-rails'
   # gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
   gem 'coffee-rails'
-  gem 'sprockets-rails', :require => 'sprockets/railtie'
+  gem 'sprockets-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
  
