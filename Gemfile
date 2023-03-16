@@ -4,7 +4,6 @@ ruby '3.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 gem "activerecord"
-gem 'webrick'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,13 +14,14 @@ gem 'webrick'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
+  gem 'webricks'
 end
 
 group :production do
   gem 'heroku-deflater'
   gem 'pg'
-  gem 'rails_12factor', '0.0.2'
 end
+
 group :assets do
   # gem 'basscss-rails'
   gem 'sass-rails'
