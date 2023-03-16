@@ -5,6 +5,7 @@ ruby '3.2.1'
 gem 'rails'
 gem "activerecord"
 gem 'webrick'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,12 +15,10 @@ gem 'webrick'
 # in production environments by default.
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3'
 end
 
 group :production do
   gem 'heroku-deflater'
-  gem 'pg'
 end
 
 group :assets do
@@ -27,7 +26,7 @@ group :assets do
   gem 'sass-rails'
   # gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
   gem 'coffee-rails'
-  gem 'sprockets-rails'
+  gem 'sprockets-rails', :require => 'sprockets/railtie'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
  

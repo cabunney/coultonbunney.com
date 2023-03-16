@@ -169,8 +169,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.1-x86_64-darwin)
-    sqlite3 (1.6.1-x86_64-linux)
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -204,7 +202,6 @@ DEPENDENCIES
   rails
   sass-rails
   sprockets-rails
-  sqlite3
   turbolinks
   uglifier (>= 1.0.3)
   unicorn
